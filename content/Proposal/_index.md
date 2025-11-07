@@ -1,9 +1,9 @@
 ---
 title: "Proposal"
 date: 2025-11-02
-weight: 2
+weight: 1
 chapter: false
-pre: " <b> 2. </b> "
+pre: " <b> 1. </b> "
 ---
 
 # Serverless Student Management System

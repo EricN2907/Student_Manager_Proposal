@@ -10,7 +10,7 @@ chapter: false
 
 ### Thông tin thành viên:
 
-&emsp; **Nguyễn Hoàng Nam** ---Team-leader/Back-end --- namnhse182076@fpt.edu.vn --- 0825561297 
+&emsp; **Nguyễn Hoàng Nam** --- Team-leader/Back-end --- namnhse182076@fpt.edu.vn --- 0825561297 
 
 &emsp; **Pham Bao Phi** --- Front-End, Back-End --- phipbse185046@fpt.edu.vn --- 0399212721
 
@@ -23,5 +23,5 @@ chapter: false
 
 ### Report Content
 
-2.[Proposal](2-Proposal/)
+[Proposal](Proposal/)
 

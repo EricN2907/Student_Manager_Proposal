@@ -23,5 +23,5 @@ chapter: false
 
 ### Report Content
 
-2.[Proposal](2-Proposal/)
+[Proposal](Proposal/)
 

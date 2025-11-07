@@ -12,12 +12,12 @@ pre: " <b> 2. </b> "
 
 ### 1. Tóm tắt điều hành
 
-Serverless Student Management System là nền tảng quản lý sinh viên được xây dựng trên AWS Serverless Architecture, mô phỏng hệ thống quản lý dữ liệu đơn giản dành cho sinh viên và doanh nghiệp nhỏ.
+Serverless Student Management System là nền tảng quản lý sinh viên được xây dựng trên AWS Serverless Architecture, mô phỏng hệ thống quản lý dữ liệu đơn giản dành cho tổ chức giáo dục và doanh nghiệp nhỏ.
 Hệ thống tự động hóa quy trình CRUD (Create, Read, Update, Delete) cho thông tin sinh viên, sử dụng các dịch vụ như API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify và CloudWatch.
 Bổ sung tính năng realtime chat sử dụng AWS AppSync, xếp hạng sinh viên chăm chỉ với AWS Personalize, thông báo tự động qua AWS SES, và xử lý sự kiện kiểm tra (như cập nhật điểm kiểm tra, thời gian thi) qua Amazon EventBridge để trigger automation.
 
 **Lợi ích chính:**
-- **Sinh viên**: Học và thực hành phát triển ứng dụng cloud thực tế, trao đổi trực tiếp với giáo viên, nhận thông báo xếp hạng.  
+- **Sinh viên**:Truy cập mọi thông tin học tập (điểm, TKB, tài liệu), trao đổi trực tiếp với giáo viên, nhận thông báo xếp hạng.  
 - **Doanh nghiệp nhỏ**: Giải pháp quản lý dữ liệu chi phí thấp, dễ triển khai với giao tiếp realtime và khuyến khích.
 - **Tổ chức giáo dục**: Môi trường training lab hoàn chỉnh cho khóa học phát triển serverless, ML và realtime apps.
 ---
@@ -25,7 +25,7 @@ Bổ sung tính năng realtime chat sử dụng AWS AppSync, xếp hạng sinh v
 ### 2. Phân tích vấn đề
 
 **Thực trạng:**  
-Doanh nghiệp nhỏ và sinh viên gặp khó khăn trong việc quản lý dữ liệu sinh viên do thiếu kiến thức về hạ tầng, thiếu công cụ quản lý tập trung, và chi phí cao của các hệ thống truyền thống như máy chủ tự quản lý hoặc cơ sở dữ liệu on-premise. Ngoài ra, thiếu tính năng trao đổi realtime dẫn đến giao tiếp chậm trễ, thiếu cơ chế khuyến khích như xếp hạng chăm chỉ, và xử lý sự kiện kiểm tra thủ công (như cập nhật điểm, nhắc nhở thi).
+Doanh nghiệp nhỏ và các tổ chức giáo dục gặp khó khăn trong việc quản lý dữ liệu sinh viên do thiếu kiến thức về hạ tầng, thiếu công cụ quản lý tập trung, và chi phí cao của các hệ thống truyền thống như máy chủ tự quản lý hoặc cơ sở dữ liệu on-premise. Ngoài ra, thiếu tính năng trao đổi realtime dẫn đến giao tiếp chậm trễ, thiếu cơ chế khuyến khích như xếp hạng chăm chỉ, và xử lý sự kiện kiểm tra thủ công (như cập nhật điểm, nhắc nhở thi).
 
 **Giải pháp đề xuất:**  
 Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả năng:  
@@ -51,28 +51,28 @@ Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả
 
 Hệ thống được thiết kế theo kiến trúc AWS Well-Architected Framework với các tầng liên kết, đảm bảo khả năng quản lý dữ liệu, xác thực, giám sát, giao tiếp realtime, xếp hạng ML, thông báo và xử lý sự kiện liên tục. Kiến trúc serverless giúp tối ưu chi phí và đảm bảo khả năng mở rộng tự động.
 
-<!-- ![Cloud Security & Monitoring System Architecture](/images/2-Proposal/edge_architecture.jpeg) -->
+![Cloud Security & Monitoring System Architecture](/images/2-Proposal/edge_architecture.jpeg)
 
-![Platform Architecture Diagram](/images/2-Proposal/solution.drawio.png)
+![Platform Architecture Diagram](/images/2-Proposal/platform_architecture.jpeg)
 
 #### Dịch vụ AWS Core được sử dụng
 
-| **Dịch vụ**            | **Chức năng chính**                                                        | **Lợi ích nổi bật**                                                                |
-| ---------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| **Amazon API Gateway** | Xử lý yêu cầu API và kết nối frontend-backend                              | Hỗ trợ RESTful APIs, throttling và caching để tăng hiệu suất                       |
-| **AWS Lambda**         | Thực thi logic CRUD mà không cần server                                    | Tự động scale, pay-per-use, giảm chi phí vận hành                                  |
-| **Amazon DynamoDB**    | Lưu trữ dữ liệu NoSQL cho thông tin sinh viên và tin nhắn chat             | Query nhanh, tự động scale, hỗ trợ GSI cho tìm kiếm phức tạp                       |
-| **Amazon Cognito**     | Quản lý xác thực và ủy quyền người dùng                                    | Hỗ trợ MFA, JWT tokens, dễ tích hợp với frontend                                   |
-| **Amazon S3**          | Lưu trữ file tĩnh cho dashboard frontend                                   | Hosting static website rẻ tiền, bền vững cao                                       |
-| **AWS Amplify**        | Triển khai và hosting frontend dashboard với CI/CD                         | Dễ dàng build/deploy apps web, tích hợp seamless với Cognito và AppSync            |
-| **Amazon CloudWatch**  | Giám sát logs và metrics hệ thống                                          | Real-time monitoring, alarms để phát hiện vấn đề sớm                               |
-| **AWS AppSync**        | Hỗ trợ GraphQL API với subscriptions cho chat realtime                     | Cập nhật dữ liệu thời gian thực qua WebSockets, tích hợp dễ với DynamoDB và Lambda |
-| **AWS Personalize**    | Xây dựng mô hình ML để xếp hạng sinh viên dựa trên dữ liệu hoạt động       | Cá nhân hóa xếp hạng, tự động học từ dữ liệu, hỗ trợ real-time inference           |
-| **AWS SES**            | Gửi email thông báo xếp hạng và cập nhật hệ thống                          | Tích hợp dễ dàng với Lambda, hỗ trợ hàng triệu email/tháng, chi phí thấp           |
-| **AWS CodePipeline**   | Quản lý pipeline CI/CD để orchestrate deployment                           | Tự động hóa toàn bộ quy trình từ source đến deploy, giảm lỗi thủ công              |
-| **Amazon EventBridge** | Routing sự kiện từ web quản lý để xử lý kiểm tra (cập nhật điểm, nhắc nhở) | Event-driven architecture, tích hợp với Lambda để tự động hóa quy trình            |
-| **AWS CodeBuild**      | Build và test code trong pipeline                                          | Xử lý compile, test tự động, hỗ trợ nhiều runtime                                  |
-| **AWS CodeDeploy**     | Deploy code đến target như Lambda hoặc Amplify                             | Tự động rollout, rollback, hỗ trợ blue/green deployment                            |
+| **Dịch vụ** | **Chức năng chính** | **Lợi ích nổi bật** |
+|--------------|---------------------|----------------------|
+| **Amazon API Gateway** | Xử lý yêu cầu API và kết nối frontend-backend | Hỗ trợ RESTful APIs, throttling và caching để tăng hiệu suất |
+| **AWS Lambda** | Thực thi logic CRUD mà không cần server | Tự động scale, pay-per-use, giảm chi phí vận hành |
+| **Amazon DynamoDB** | Lưu trữ dữ liệu NoSQL cho thông tin sinh viên và tin nhắn chat | Query nhanh, tự động scale, hỗ trợ GSI cho tìm kiếm phức tạp |
+| **Amazon Cognito** | Quản lý xác thực và ủy quyền người dùng | Hỗ trợ MFA, JWT tokens, dễ tích hợp với frontend |
+| **Amazon S3** | Lưu trữ file tĩnh cho dashboard frontend | Hosting static website rẻ tiền, bền vững cao |
+| **Amazon CloudFront** | Phân phối CDN cho website tĩnh và tài nguyên frontend | Giảm latency toàn cầu, caching tại Edge, HTTPS, hỗ trợ HTTP/2 và HTTP/3, tích hợp WAF/Shield, custom domain (ACM), OAC bảo vệ S3 |
+| **AWS Amplify** | Triển khai và hosting frontend dashboard với CI/CD | Dễ dàng build/deploy apps web, tích hợp seamless với Cognito và AppSync |
+| **Amazon CloudWatch** | Giám sát logs và metrics hệ thống | Real-time monitoring, alarms để phát hiện vấn đề sớm |
+| **AWS AppSync** | Hỗ trợ GraphQL API với subscriptions cho chat realtime | Cập nhật dữ liệu thời gian thực qua WebSockets, tích hợp dễ với DynamoDB và Lambda |
+| **AWS Personalize** | Xây dựng mô hình ML để xếp hạng sinh viên dựa trên dữ liệu hoạt động | Cá nhân hóa xếp hạng, tự động học từ dữ liệu, hỗ trợ real-time inference |
+| **AWS SES** | Gửi email thông báo xếp hạng và cập nhật hệ thống | Tích hợp dễ dàng với Lambda, hỗ trợ hàng triệu email/tháng, chi phí thấp |
+| **AWS CodePipeline** | Quản lý pipeline CI/CD để deploy code và hạ tầng | Tự động hóa deployment, tích hợp với GitHub/Amplify, giảm lỗi thủ công |
+| **Amazon EventBridge** | Routing sự kiện từ web quản lý để xử lý kiểm tra (cập nhật điểm, nhắc nhở) | Event-driven architecture, tích hợp với Lambda để tự động hóa quy trình |
+
 
 
 #### Thiết kế chi tiết theo tầng
@@ -81,6 +81,7 @@ Hệ thống được thiết kế theo kiến trúc AWS Well-Architected Framew
 ```
 Static Hosting & Delivery
 ├── Amazon S3 (Static file storage)
+├── Amazon CloudFront (CDN distribution)
 ├── React/Vue Dashboard (CRUD UI with authentication, chat interface & ranking display)
 ```
 
@@ -149,7 +150,7 @@ Triển khai Lambda functions cho CRUD, kết nối API Gateway và AppSync.
 Cấu hình authorization với Cognito, thêm schema GraphQL cho chat.
 
 **3. Frontend & Integration (Tuần 5–6)**  
-Upload dashboard code lên S3.
+Upload dashboard code lên S3, cấu hình CloudFront.
 Tích hợp frontend với API, AppSync subscriptions cho chat realtime, và Cognito.
 
 **4. ML & Ranking Integration (Tuần 7)**  
@@ -183,14 +184,14 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.
 
 Dự án được triển khai trong 14 tuần (từ tháng 9 đến tháng 12/2025), chia thành 6 giai đoạn chính theo mô hình Agile.
 
-| **Giai đoạn**                          | **Thời gian** | **Mục tiêu chính**          | **Sản phẩm đầu ra (Deliverables)**                                        | **Tiêu chí thành công (Success Criteria)** |
-| -------------------------------------- | ------------- | --------------------------- | ------------------------------------------------------------------------- | ------------------------------------------ |
-| **Phase 1: Foundation Setup**          | Tuần 1–2      | Thiết lập môi trường AWS    | • AWS account setup<br>• DynamoDB & Cognito config<br>• IaC templates<br> | • Hạ tầng AWS hoạt động ổn định<br>        |
-| **Phase 2: Backend Deployment**        | Tuần 3–5      | Xây dựng API và logic       | • Lambda functions<br>• API Gateway & AppSync endpointss                  | • CRUD & chat mutations hoạt động          |
-| **Phase 3: Frontend Integration**      | Tuần 6–7      | Triển khai dashboard & chat | • S3 hosting<br>• Realtime subscriptions integration                      | • Dashboard & chat truy cập realtime       |
-| **Phase 4: ML & Ranking**              | Tuần 8-9      | Tích hợp Personalize        | • Datasets import<br>• Ranking API                                        | • Xếp hạng sinh viên hoạt động             |
-| **Phase 5: Notification & Monitoring** | Tuần 10–11    | Tích hợp SES & giám sát     | • Email notifications<br>• CloudWatch alarms<br>                          | • Thông báo gửi chính xác                  |
-| **Phase 6: Testing & Review**          | Tuần 12–14    | Kiểm thử và hoàn thiện      | • End-to-end tests<br>• Documentation & Demo                              | • Hệ thống ổn định, demo hoàn thiện        |
+| **Giai đoạn** | **Thời gian** | **Mục tiêu chính** | **Sản phẩm đầu ra (Deliverables)** | **Tiêu chí thành công (Success Criteria)** |
+|----------------|----------------|---------------------|------------------------------------|-------------------------------------------|
+| **Phase 1: Foundation Setup** | Tuần 1–2 | Thiết lập môi trường AWS | • AWS account setup<br>• DynamoDB & Cognito config<br>• IaC templates<br> | • Hạ tầng AWS hoạt động ổn định<br> |
+| **Phase 2: Backend Deployment** | Tuần 3–5 | Xây dựng API và logic | • Lambda functions<br>• API Gateway & AppSync endpointss | • CRUD & chat mutations hoạt động |
+| **Phase 3: Frontend Integration** | Tuần 6–7 | Triển khai dashboard & chat | • S3 + CloudFront hosting<br>• Realtime subscriptions integration | • Dashboard & chat truy cập realtime |
+| **Phase 4: ML & Ranking** | Tuần 8-9 | Tích hợp Personalize | • Datasets import<br>• Ranking API | • Xếp hạng sinh viên hoạt động |
+| **Phase 5: Notification & Monitoring** | Tuần 10–11 | Tích hợp SES & giám sát | • Email notifications<br>• CloudWatch alarms<br> | • Thông báo gửi chính xác |
+| **Phase 6: Testing & Review** | Tuần 12–14 | Kiểm thử và hoàn thiện | • End-to-end tests<br>• Documentation & Demo | • Hệ thống ổn định, demo hoàn thiện |
 
 ---
 
@@ -204,25 +205,25 @@ Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/e
 **Dịch vụ AWS:**
 
 
-| **Dịch vụ**            | **Mô tả sử dụng**                        | **Chi phí ước tính / tháng (USD)** | **Ghi chú**                                                                         |
-| ---------------------- | ---------------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------- |
-| **Amazon API Gateway** | Xử lý ~1M API calls/tháng                | ~$1.00 – $3.50                     | HTTP APIs: $1.00/million calls; REST: $3.50/million; free tier 1M calls.            |
-| **AWS Lambda**         | ~1M requests, 400k GB-seconds            | ~$0.20 – $0.50                     | Requests: $0.20/million; Duration: $0.0000166667/GB-second; free tier đủ dùng.      |
-| **Amazon DynamoDB**    | ~25 GB storage, 2.5M reads/writes        | ~$0.25 – $1.25                     | Reads: $0.25/million; Writes: $1.25/million; Storage: $0.25/GB; free tier 25 GB.    |
-| **Amazon Cognito**     | ~10k MAUs                                | ~$0.0055 – $0.015                  | Essentials: $0.015/MAU; free tier 10k MAUs.                                         |
-| **Amazon S3**          | ~5 GB storage, requests thấp             | ~$0.023 – $0.12                    | Storage: $0.023/GB; Requests: $0.0004/1k GET; free tier credits.                    |
-| **Amazon CloudWatch**  | ~5 GB logs, 10 metrics/alarms            | ~$0.03 – $0.50                     | Logs: $0.50/GB ingestion; Storage: $0.03/GB; Metrics: $0.30/metric; free tier 5 GB. |
-| **AWS AppSync**        | ~1M queries/subscriptions, realtime chat | ~$0.50 – $2.00                     | Requests: $4.00/million; Data transfer: $0.09/GB; free tier 250k requests.          |
-| **AWS Personalize**    | Train model hàng tuần, ~10k interactions | ~$0.50 – $5.00                     | Training: $0.25/giờ; Inference: $0.00005/request; Storage: $0.05/GB.                |
-| **AWS SES**            | ~10k emails/tháng                        | ~$0.10 – $0.30                     | $0.10/1k emails; free tier 62k emails/tháng đầu tiên.                               |
-| **Amazon EventBridge** | ~10k events/tháng, rules cho kiểm tra    | ~$0.10 – $0.50                     | $1.00/million events; free tier 100k events/tháng.                                  |
-| **AWS Amplify**        | Hosting dashboard, vài builds/tháng      | ~$0.00 – $1.00                     | Build minutes: $0.01/phút; Hosting: $0.15/GB served; free tier available.           |
-| **CodePipeline**       |                                          |                                    |                                                                                     |
+| **Dịch vụ** | **Mô tả sử dụng** | **Chi phí ước tính / tháng (USD)** | **Ghi chú** |
+|--------------|-------------------------------|------------------------------------|---------------------------|
+| **Amazon API Gateway** | Xử lý ~1M API calls/tháng | ~$1.00 – $3.50 | HTTP APIs: $1.00/million calls; REST: $3.50/million; free tier 1M calls. |
+| **AWS Lambda** | ~1M requests, 400k GB-seconds | ~$0.20 – $0.50 | Requests: $0.20/million; Duration: $0.0000166667/GB-second; free tier đủ dùng. |
+| **Amazon DynamoDB** | ~25 GB storage, 2.5M reads/writes | ~$0.25 – $1.25 | Reads: $0.25/million; Writes: $1.25/million; Storage: $0.25/GB; free tier 25 GB. |
+| **Amazon Cognito** | ~10k MAUs | ~$0.0055 – $0.015 | Essentials: $0.015/MAU; free tier 10k MAUs. |
+| **Amazon S3** | ~5 GB storage, requests thấp | ~$0.023 – $0.12 | Storage: $0.023/GB; Requests: $0.0004/1k GET; free tier credits. |
+| **Amazon CloudWatch** | ~5 GB logs, 10 metrics/alarms | ~$0.03 – $0.50 | Logs: $0.50/GB ingestion; Storage: $0.03/GB; Metrics: $0.30/metric; free tier 5 GB. |
+| **AWS AppSync** | ~1M queries/subscriptions, realtime chat | ~$0.50 – $2.00 | Requests: $4.00/million; Data transfer: $0.09/GB; free tier 250k requests. |
+| **AWS Personalize** | Train model hàng tuần, ~10k interactions | ~$0.50 – $5.00 | Training: $0.25/giờ; Inference: $0.00005/request; Storage: $0.05/GB. |
+| **AWS SES** | ~10k emails/tháng | ~$0.10 – $0.30 | $0.10/1k emails; free tier 62k emails/tháng đầu tiên. |
+| **Amazon EventBridge** | ~10k events/tháng, rules cho kiểm tra | ~$0.10 – $0.50 | $1.00/million events; free tier 100k events/tháng. |
+| **AWS Amplify** | Hosting dashboard, vài builds/tháng | ~$0.00 – $1.00 | Build minutes: $0.01/phút; Hosting: $0.15/GB served; free tier available. |
+| **CodePipeline** |  |  |  |
 
 #### Tổng cộng ước tính
-| **Tổng chi phí / tháng (ước lượng)** | **Tổng 3 tháng (ước lượng)** | **Ghi chú**                                                                  |
-| ------------------------------------ | ---------------------------- | ---------------------------------------------------------------------------- |
-| **~$5 – $15 / tháng**                | **~$15 – $45 / 3 tháng**     | Phụ thuộc usage thực tế (chat, ranking, emails, events); tận dụng free tier. |
+| **Tổng chi phí / tháng (ước lượng)** | **Tổng 3 tháng (ước lượng)** | **Ghi chú** |
+|--------------------------------------|-------------------------------|-------------|
+| **~$5 – $15 / tháng** | **~$15 – $45 / 3 tháng** | Phụ thuộc usage thực tế (chat, ranking, emails, events); tận dụng free tier. |
 
 #### Lưu ý
 - Tất cả dịch vụ chính nằm trong Free Tier năm đầu.
@@ -236,16 +237,16 @@ Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/e
 
 Dựa trên NIST Risk Management Framework, nhóm dự án xác định các rủi ro chính và biện pháp giảm thiểu.
 
-| **Mã rủi ro**                     | **Mô tả**                                | **Mức độ**     | **Giảm thiểu (Mitigation)**                                    |
-| --------------------------------- | ---------------------------------------- | -------------- | -------------------------------------------------------------- |
-| **R1 – Data Leakage**             | Lộ dữ liệu do config sai                 | **Cao**        | Áp dụng Cognito auth, IAM least privilege, DynamoDB encryption |
-| **R2 – API Overload**             | Quá nhiều requests gây chậm              | **Trung bình** | Throttling API Gateway/AppSync, alarms CloudWatch              |
-| **R3 – Lambda Cold Start**        | Delay khi invoke                         | **Trung bình** | Tối ưu code, Provisioned Concurrency nếu cần                   |
-| **R4 – Chi phí vượt**             | Usage tăng bất thường (chat, emails cao) | **Trung bình** | AWS Budgets alerts, monitor Cost Explorer                      |
-| **R5 – Service Downtime**         | Gián đoạn AWS                            | **Thấp**       | Multi-AZ config, backups DynamoDB                              |
-| **R6 – Realtime Latency**         | Delay trong chat do subscriptions        | **Trung bình** | Sử dụng AppSync caching, test với load cao                     |
-| **R7 – ML Accuracy**              | Xếp hạng không chính xác do data kém     | **Trung bình** | Validate datasets, retrain định kỳ với Lambda                  |
-| **R8 – Event Processing Failure** | Lỗi routing sự kiện kiểm tra             | **Trung bình** | Dead-letter queues cho EventBridge, test rules                 |
+| **Mã rủi ro** | **Mô tả** | **Mức độ** | **Giảm thiểu (Mitigation)** |
+|----------------|------------|-------------|------------------------------|
+| **R1 – Data Leakage** | Lộ dữ liệu do config sai | **Cao** | Áp dụng Cognito auth, IAM least privilege, DynamoDB encryption |
+| **R2 – API Overload** | Quá nhiều requests gây chậm | **Trung bình** | Throttling API Gateway/AppSync, alarms CloudWatch |
+| **R3 – Lambda Cold Start** | Delay khi invoke | **Trung bình** | Tối ưu code, Provisioned Concurrency nếu cần |
+| **R4 – Chi phí vượt** | Usage tăng bất thường (chat, emails cao) | **Trung bình** | AWS Budgets alerts, monitor Cost Explorer |
+| **R5 – Service Downtime** | Gián đoạn AWS | **Thấp** | Multi-AZ config, backups DynamoDB |
+| **R6 – Realtime Latency** | Delay trong chat do subscriptions | **Trung bình** | Sử dụng AppSync caching, test với load cao |
+| **R7 – ML Accuracy** | Xếp hạng không chính xác do data kém | **Trung bình** | Validate datasets, retrain định kỳ với Lambda |
+| **R8 – Event Processing Failure** | Lỗi routing sự kiện kiểm tra | **Trung bình** | Dead-letter queues cho EventBridge, test rules |
 
 **Contingency Plan (Tóm tắt):**
 - Recovery: Sử dụng CloudFormation rebuild nhanh.

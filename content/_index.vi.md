@@ -1,5 +1,5 @@
 ---
-title: "Proposal Report"
+title: "Báo cáo bản đề xuất"
 date: 2025-09-09
 weight: 1
 chapter: false
@@ -8,7 +8,7 @@ chapter: false
     
 # We bare Devs
 
-### Member Information:
+### Thông tin thành viên:
 
 &emsp; **Nguyễn Hoàng Nam** ---Team-leader/Back-end --- namnhse182076@fpt.edu.vn --- 0825561297 
 

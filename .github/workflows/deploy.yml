@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Tự động deploy khi bạn push code lên nhánh main
+      - main  # Tự động deploy khi push lên nhánh main
 
 permissions:
   contents: read
@@ -18,8 +18,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true      # 👈 Quan trọng nếu bạn dùng theme Hugo nằm trong /themes/
-          fetch-depth: 0        # Đảm bảo lấy đủ dữ liệu để build
+          submodules: true      # Quan trọng nếu theme nằm trong /themes/
+          fetch-depth: 0
 
       - name: Setup Hugo
-        
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

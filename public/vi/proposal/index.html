@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Hugo 0.152.2">
     <meta
   name="description"
   content=""
@@ -15,21 +15,21 @@
     <title>Bản đề xuất :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1762741376" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1762741376" rel="stylesheet">
-    <link href="../../css/hybrid.css?1762741376" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1762741376" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1762741376" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1762741376" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1762741376" rel="stylesheet">
-    <link href="../../css/theme.css?1762741376" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1762741376" rel="stylesheet">
+    <link href="../../css/nucleus.css?1762747133" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1762747133" rel="stylesheet">
+    <link href="../../css/hybrid.css?1762747133" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1762747133" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1762747133" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1762747133" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1762747133" rel="stylesheet">
+    <link href="../../css/theme.css?1762747133" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1762747133" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1762741376" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1762747133" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1762741376"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1762747133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1762741376"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1762741376"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1762747133"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1762747133"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1762741376"></script>
+<script type="text/javascript" src="../../js/search.js?1762747133"></script>
  
   </div>
 
@@ -278,18 +278,16 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#hệ-thống-quản-lý-sinh-viên-serverless-dựa-trên-đám-mây-cho-sinh-viên-và-doanh-nghiệp-nhỏ">Hệ thống quản lý sinh viên serverless dựa trên đám mây cho sinh viên và doanh nghiệp nhỏ</a>
+    <li>
       <ul>
-        <li><a href="#hệ-thống-quản-lý-sinh-viên-serverless-dựa-trên-đám-mây-cho-sinh-viên-và-doanh-nghiệp-nhỏ-1">Hệ thống quản lý sinh viên serverless dựa trên đám mây cho sinh viên và doanh nghiệp nhỏ</a></li>
         <li><a href="#1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</a></li>
-        <li><a href="#2-phân-tích-vấn-đề">2. Phân tích vấn đề</a></li>
+        <li><a href="#2-tuyên-bố-vấn-đề">2. Tuyên bố vấn đề</a></li>
         <li><a href="#3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</a></li>
         <li><a href="#4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</a></li>
         <li><a href="#5-lộ-trình--mốc-quan-trọng">5. Lộ trình &amp; Mốc quan trọng</a></li>
         <li><a href="#6-ước-tính-ngân-sách">6. Ước tính ngân sách</a></li>
         <li><a href="#7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</a></li>
         <li><a href="#8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng</a></li>
-        <li><a href="#9-tài-liệu-tham-khảo-và-phụ-lục">9. Tài liệu tham khảo và Phụ lục</a></li>
       </ul>
     </li>
   </ul>
@@ -317,42 +315,15 @@
 
 
 	<h1 id="serverless-student-management-system">Serverless Student Management System</h1>
-<h2 id="hệ-thống-quản-lý-sinh-viên-serverless-dựa-trên-đám-mây-cho-sinh-viên-và-doanh-nghiệp-nhỏ">Hệ thống quản lý sinh viên serverless dựa trên đám mây cho sinh viên và doanh nghiệp nhỏ</h2>
-<h3 id="hệ-thống-quản-lý-sinh-viên-serverless-dựa-trên-đám-mây-cho-sinh-viên-và-doanh-nghiệp-nhỏ-1">Hệ thống quản lý sinh viên serverless dựa trên đám mây cho sinh viên và doanh nghiệp nhỏ</h3>
 <h3 id="1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</h3>
-<p>Serverless Student Management System là nền tảng quản lý sinh viên được xây dựng trên AWS Serverless Architecture, mô phỏng hệ thống quản lý dữ liệu đơn giản dành cho tổ chức giáo dục và doanh nghiệp nhỏ.
-Hệ thống tự động hóa quy trình CRUD (Create, Read, Update, Delete) cho thông tin sinh viên, sử dụng các dịch vụ như API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify và CloudWatch.
-Bổ sung tính năng realtime chat sử dụng AWS AppSync, xếp hạng sinh viên chăm chỉ với AWS Personalize, thông báo tự động qua AWS SES, và xử lý sự kiện kiểm tra (như cập nhật điểm kiểm tra, thời gian thi) qua Amazon EventBridge để trigger automation.</p>
-<p><strong>Lợi ích chính:</strong></p>
-<ul>
-<li><strong>Sinh viên</strong>:Truy cập mọi thông tin học tập (điểm, TKB, tài liệu), trao đổi trực tiếp với giáo viên, nhận thông báo xếp hạng.</li>
-<li><strong>Doanh nghiệp nhỏ</strong>: Giải pháp quản lý dữ liệu chi phí thấp, dễ triển khai với giao tiếp realtime và khuyến khích.</li>
-<li><strong>Tổ chức giáo dục</strong>: Môi trường training lab hoàn chỉnh cho khóa học phát triển serverless, ML và realtime apps.</li>
-</ul>
-<hr>
-<h3 id="2-phân-tích-vấn-đề">2. Phân tích vấn đề</h3>
-<p><strong>Thực trạng:</strong><br>
-Doanh nghiệp nhỏ và các tổ chức giáo dục gặp khó khăn trong việc quản lý dữ liệu sinh viên do thiếu kiến thức về hạ tầng, thiếu công cụ quản lý tập trung, và chi phí cao của các hệ thống truyền thống như máy chủ tự quản lý hoặc cơ sở dữ liệu on-premise. Ngoài ra, thiếu tính năng trao đổi realtime dẫn đến giao tiếp chậm trễ, thiếu cơ chế khuyến khích như xếp hạng chăm chỉ, và xử lý sự kiện kiểm tra thủ công (như cập nhật điểm, nhắc nhở thi).</p>
-<p><strong>Giải pháp đề xuất:</strong><br>
-Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả năng:</p>
-<ul>
-<li>Quản lý dữ liệu: DynamoDB + Lambda xử lý lưu trữ và truy vấn thông tin sinh viên, điểm số.</li>
-<li>Xác thực an toàn: Cognito quản lý đăng nhập cho giảng viên và admin.</li>
-<li>Frontend dễ tiếp cận: S3 + Amplify host dashboard giao diện thân thiện.</li>
-<li>Giám sát: CloudWatch theo dõi logs và hiệu suất hệ thống.</li>
-<li>Trao đổi realtime: AWS AppSync với GraphQL subscriptions để hỗ trợ chat thời gian thực giữa sinh viên và giáo viên.</li>
-<li>Xếp hạng sinh viên chăm chỉ: AWS Personalize phân tích dữ liệu hoạt động để re-rank sinh viên theo mức độ chăm chỉ.</li>
-<li>Thông báo tự động: AWS SES gửi email thông báo xếp hạng và cập nhật hệ thống.</li>
-<li>Xử lý sự kiện kiểm tra: Amazon EventBridge routing sự kiện từ web quản lý (như tạo kiểm tra mới, cập nhật điểm) để trigger Lambda tự động hóa (ví dụ: gửi thông báo, cập nhật ranking).</li>
-</ul>
-<p><strong>Hiệu quả mong đợi:</strong></p>
-<ul>
-<li>Giảm 90% chi phí hạ tầng so với máy chủ truyền thống.</li>
-<li>Giảm 70% thời gian triển khai nhờ serverless.</li>
-<li>Tăng 60% hiệu quả giao tiếp nhờ chat realtime.</li>
-<li>Tăng 50% sự tương tác nhờ xếp hạng cá nhân hóa và thông báo.</li>
-<li>Nâng cao kỹ năng cloud cho sinh viên thông qua thực hành thực tế.</li>
-</ul>
+<p>Serverless Student Management Platform được thiết kế dành cho các tổ chức giáo dục và doanh nghiệp nhỏ nhằm nâng cao khả năng quản lý và phân tích dữ liệu sinh viên. Nền tảng hỗ trợ tối đa 50-100 sinh viên, có khả năng mở rộng lên 500–1000 sinh viên, sử dụng giao diện web kết hợp API để truyền dữ liệu thời gian thực. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp quản lý tập trung, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5-10 giáo viên/admin thông qua Amazon Cognito.</p>
+<h3 id="2-tuyên-bố-vấn-đề">2. Tuyên bố vấn đề</h3>
+<p><strong>Vấn đề hiện tại</strong></p>
+<p>Các hệ thống quản lý sinh viên hiện tại yêu cầu nhập dữ liệu thủ công, khó quản lý khi có nhiều lớp học. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp. Thiếu tính năng trao đổi realtime dẫn đến giao tiếp chậm trễ, thiếu cơ chế khuyến khích như xếp hạng chăm chỉ, và xử lý sự kiện kiểm tra thủ công.</p>
+<p><strong>Giải pháp</strong></p>
+<p>Nền tảng sử dụng Amazon API Gateway để tiếp nhận yêu cầu REST, AWS Lambda xử lý logic nghiệp vụ, Amazon DynamoDB để lưu trữ dữ liệu sinh viên và điểm số, và AWS AppSync cùng GraphQL để cung cấp giao tiếp realtime. AWS Amplify với React/Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như các hệ thống LMS truyền thống nhưng với chi phí thấp hơn, người dùng có thể đăng ký sinh viên mới và quản lý thông tin, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích học tập. Các tính năng chính bao gồm dashboard quản lý thời gian thực, phân tích xu hướng học tập và chi phí vận hành thấp.</p>
+<p><strong>Lợi ích và hoàn vốn đầu tư (ROI)</strong></p>
+<p>Giải pháp tạo nền tảng cơ bản để các sinh viên IT phát triển kỹ năng AWS serverless, đồng thời cung cấp công cụ quản lý hiệu quả cho giáo viên phục vụ giảng dạy và đánh giá. Nền tảng giảm bớt báo cáo thủ công cho từng lớp học thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính $7-20 USD (theo AWS Pricing Calculator), tổng cộng $21-60 USD cho 3 tháng. Tất cả tài nguyên AWS được sử dụng trong free tier và giá rẻ, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 3-6 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công và nâng cao hiệu quả giảng dạy.</p>
 <hr>
 <h3 id="3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</h3>
 <p>Hệ thống được thiết kế theo kiến trúc AWS Well-Architected Framework với các tầng liên kết, đảm bảo khả năng quản lý dữ liệu, xác thực, giám sát, giao tiếp realtime, xếp hạng ML, thông báo và xử lý sự kiện liên tục. Kiến trúc serverless giúp tối ưu chi phí và đảm bảo khả năng mở rộng tự động.</p>
@@ -369,9 +340,39 @@ Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả
   </thead>
   <tbody>
       <tr>
+          <td><strong>Amazon Route 53</strong></td>
+          <td>DNS management và routing traffic đến CloudFront</td>
+          <td>Custom domain setup, health checks, geo-routing, tích hợp SSL certificates</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudFront</strong></td>
+          <td>Phân phối CDN cho website tĩnh và tài nguyên frontend</td>
+          <td>Giảm latency toàn cầu, caching tại Edge, HTTPS, hỗ trợ HTTP/2 và HTTP/3, tích hợp WAF/Shield, custom domain (ACM), OAC bảo vệ S3</td>
+      </tr>
+      <tr>
+          <td><strong>AWS WAF</strong></td>
+          <td>Web Application Firewall bảo vệ khỏi attacks</td>
+          <td>Block malicious requests, rate limiting, IP filtering, tích hợp với CloudFront</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Amplify</strong></td>
+          <td>Triển khai và hosting frontend dashboard với CI/CD</td>
+          <td>Dễ dàng build/deploy apps web, tích hợp seamless với Cognito và AppSync</td>
+      </tr>
+      <tr>
+          <td><strong>AWS AppSync</strong></td>
+          <td>Hỗ trợ GraphQL API với subscriptions cho chat realtime</td>
+          <td>Cập nhật dữ liệu thời gian thực qua WebSockets, tích hợp dễ với DynamoDB và Lambda</td>
+      </tr>
+      <tr>
           <td><strong>Amazon API Gateway</strong></td>
           <td>Xử lý yêu cầu API và kết nối frontend-backend</td>
           <td>Hỗ trợ RESTful APIs, throttling và caching để tăng hiệu suất</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon Cognito</strong></td>
+          <td>Quản lý xác thực và ủy quyền người dùng</td>
+          <td>Hỗ trợ MFA, JWT tokens, dễ tích hợp với frontend</td>
       </tr>
       <tr>
           <td><strong>AWS Lambda</strong></td>
@@ -384,9 +385,9 @@ Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả
           <td>Query nhanh, tự động scale, hỗ trợ GSI cho tìm kiếm phức tạp</td>
       </tr>
       <tr>
-          <td><strong>Amazon Cognito</strong></td>
-          <td>Quản lý xác thực và ủy quyền người dùng</td>
-          <td>Hỗ trợ MFA, JWT tokens, dễ tích hợp với frontend</td>
+          <td><strong>Amazon CloudWatch</strong></td>
+          <td>Giám sát logs và metrics hệ thống</td>
+          <td>Real-time monitoring, alarms để phát hiện vấn đề sớm</td>
       </tr>
       <tr>
           <td><strong>Amazon S3</strong></td>
@@ -394,24 +395,9 @@ Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả
           <td>Hosting static website rẻ tiền, bền vững cao</td>
       </tr>
       <tr>
-          <td><strong>Amazon CloudFront</strong></td>
-          <td>Phân phối CDN cho website tĩnh và tài nguyên frontend</td>
-          <td>Giảm latency toàn cầu, caching tại Edge, HTTPS, hỗ trợ HTTP/2 và HTTP/3, tích hợp WAF/Shield, custom domain (ACM), OAC bảo vệ S3</td>
-      </tr>
-      <tr>
-          <td><strong>AWS Amplify</strong></td>
-          <td>Triển khai và hosting frontend dashboard với CI/CD</td>
-          <td>Dễ dàng build/deploy apps web, tích hợp seamless với Cognito và AppSync</td>
-      </tr>
-      <tr>
-          <td><strong>Amazon CloudWatch</strong></td>
-          <td>Giám sát logs và metrics hệ thống</td>
-          <td>Real-time monitoring, alarms để phát hiện vấn đề sớm</td>
-      </tr>
-      <tr>
-          <td><strong>AWS AppSync</strong></td>
-          <td>Hỗ trợ GraphQL API với subscriptions cho chat realtime</td>
-          <td>Cập nhật dữ liệu thời gian thực qua WebSockets, tích hợp dễ với DynamoDB và Lambda</td>
+          <td><strong>Amazon EventBridge</strong></td>
+          <td>Routing sự kiện từ web quản lý để xử lý kiểm tra (cập nhật điểm, nhắc nhở)</td>
+          <td>Event-driven architecture, tích hợp với Lambda để tự động hóa quy trình</td>
       </tr>
       <tr>
           <td><strong>AWS Personalize</strong></td>
@@ -424,89 +410,35 @@ Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả
           <td>Tích hợp dễ dàng với Lambda, hỗ trợ hàng triệu email/tháng, chi phí thấp</td>
       </tr>
       <tr>
-          <td><strong>AWS CodePipeline</strong></td>
-          <td>Quản lý pipeline CI/CD để deploy code và hạ tầng</td>
-          <td>Tự động hóa deployment, tích hợp với GitHub/Amplify, giảm lỗi thủ công</td>
+          <td><strong>AWS CodeBuild</strong></td>
+          <td>Build và test code từ GitLab repository</td>
+          <td>Tự động compile, package artifacts, run unit tests trong pipeline</td>
       </tr>
       <tr>
-          <td><strong>Amazon EventBridge</strong></td>
-          <td>Routing sự kiện từ web quản lý để xử lý kiểm tra (cập nhật điểm, nhắc nhở)</td>
-          <td>Event-driven architecture, tích hợp với Lambda để tự động hóa quy trình</td>
+          <td><strong>AWS CodeDeploy</strong></td>
+          <td>Deploy applications lên các AWS services</td>
+          <td>Blue/green deployment, rollback capabilities, zero-downtime deployment</td>
+      </tr>
+      <tr>
+          <td><strong>GitLab</strong></td>
+          <td>Source control và trigger CI/CD pipeline</td>
+          <td>Version control, merge requests, issue tracking, webhook integration</td>
       </tr>
   </tbody>
 </table>
-<h4 id="thiết-kế-chi-tiết-theo-tầng">Thiết kế chi tiết theo tầng</h4>
-<p><strong>1. Frontend Layer (Tầng giao diện người dùng)</strong></p>
-<pre tabindex="0"><code>Static Hosting &amp; Delivery
-├── Amazon S3 (Static file storage)
-├── Amazon CloudFront (CDN distribution)
-├── React/Vue Dashboard (CRUD UI with authentication, chat interface &amp; ranking display)
-</code></pre><p><strong>2. Authentication Layer (Tầng xác thực)</strong></p>
-<pre tabindex="0"><code>User Management &amp; Security
-├── Amazon Cognito (User pools &amp; app clients)
-├── MFA &amp; JWT Tokens (Secure access for admins/lecturers/students)
-├── Integration with API Gateway/AppSync (Authorization)
-</code></pre><p><strong>3. API &amp; Logic Layer (Tầng xử lý logic)</strong></p>
-<pre tabindex="0"><code>Serverless Backend
-├── Amazon API Gateway (RESTful endpoints: /students, /courses)
-├── AWS AppSync (GraphQL: queries, mutations, subscriptions for chat)
-├── AWS Lambda (CRUD, chat logic, ranking trigger, email send)
-├── Custom Code (Node.js/Python for validation, processing &amp; SES integration)
-</code></pre><p><strong>4. Data Storage Layer (Tầng lưu trữ dữ liệu)</strong></p>
-<pre tabindex="0"><code>NoSQL Database
-├── Amazon DynamoDB (Tables: Students, Courses, Messages, Interactions)
-├── Partition Keys &amp; GSIs (Efficient querying for chat &amp; ranking data)
-├── Backup &amp; TTL (Data protection &amp; cleanup for old messages)
-</code></pre><p><strong>5. ML &amp; Ranking Layer (Tầng xếp hạng thông minh)</strong></p>
-<pre tabindex="0"><code>Personalized Recommendation Pipeline
-├── AWS Personalize (Datasets: Users, Items=SinhVien, Interactions=HoatDong)
-├── Lambda Trigger (Import data from DynamoDB, train model)
-├── GetPersonalizedRanking API (Re-rank danh sách sinh viên theo &#34;chăm chỉ&#34;)
-</code></pre><p><strong>6. Notification Layer (Tầng thông báo)</strong></p>
-<pre tabindex="0"><code>Automated Alerts
-├── AWS SES (Send emails with templates)
-├── Lambda Function (Trigger from EventBridge on ranking updates)
-├── Integration with SNS (For fallback SMS if needed)
-</code></pre><p><strong>7. Monitoring Layer (Tầng giám sát)</strong></p>
-<pre tabindex="0"><code>Observability
-├── Amazon CloudWatch (Logs, metrics, alarms)
-├── X-Ray Integration (Tracing if extended)
-├── Dashboards (Real-time insights)
-</code></pre><hr>
+<hr>
 <h3 id="4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</h3>
 <h4 id="các-giai-đoạn-triển-khai">Các giai đoạn triển khai</h4>
-<p>Dự án tuân theo kế hoạch thực tập kéo dài 10 tuần, chia thành 6 giai đoạn chính, tập trung vào các dịch vụ AWS Serverless, realtime, ML và tích hợp dữ liệu.</p>
-<p><strong>1. Foundation &amp; Setup (Tuần 1–2)</strong><br>
-Tạo tài khoản AWS, cấu hình IAM roles, và thiết lập DynamoDB tables bằng CloudFormation.
-Thiết lập baseline (Cognito user pools, S3 bucket).</p>
-<p><strong>2. Core Backend Deployment (Tuần 3–4)</strong><br>
-Triển khai Lambda functions cho CRUD, kết nối API Gateway và AppSync.
-Cấu hình authorization với Cognito, thêm schema GraphQL cho chat.</p>
-<p><strong>3. Frontend &amp; Integration (Tuần 5–6)</strong><br>
-Upload dashboard code lên S3, cấu hình CloudFront.
-Tích hợp frontend với API, AppSync subscriptions cho chat realtime, và Cognito.</p>
-<p><strong>4. ML &amp; Ranking Integration (Tuần 7)</strong><br>
-Cấu hình AWS Personalize với datasets từ DynamoDB.
-Triển khai Lambda để train model và lấy xếp hạng.</p>
-<p><strong>5. Notification &amp; Monitoring (Tuần 8)</strong><br>
-Tích hợp AWS SES với Lambda cho thông báo email.
-Thiết lập CloudWatch logs và alarms.</p>
-<p><strong>6. Testing &amp; Optimization (Tuần 9–10)</strong><br>
-Test end-to-end với dữ liệu mẫu, bao gồm chat, ranking và email.
-Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
+<p>Dự án gồm 2 phần — phát triển hệ thống quản lý sinh viên serverless và xây dựng nền tảng phân tích thông minh — mỗi phần trải qua 4 giai đoạn:</p>
+<ol>
+<li><strong>Nghiên cứu và vẽ kiến trúc</strong>: Nghiên cứu AWS serverless patterns với DynamoDB và thiết kế kiến trúc tích hợp realtime chat/ranking (1 tháng trước kỳ thực tập).</li>
+<li><strong>Tính toán chi phí và kiểm tra tính khả thi</strong>: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh scope phù hợp (Tháng 1).</li>
+<li><strong>Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp</strong>: Tinh chỉnh (ví dụ tối ưu Lambda với React SSR) để đảm bảo hiệu quả (Tháng 2).</li>
+<li><strong>Phát triển, kiểm thử, triển khai</strong>: Lập trình React frontend, AWS services với CDK/SDK và AppSync subscriptions, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).</li>
+</ol>
 <h4 id="yêu-cầu-kỹ-thuật">Yêu cầu kỹ thuật</h4>
-<ul>
-<li>Kiến trúc: 100% AWS Serverless (Lambda, API Gateway, AppSync, DynamoDB, Personalize, SES).</li>
-<li>Hạ tầng: CloudFormation templates; S3 dùng để lưu trữ frontend.</li>
-<li>Giám sát: CloudWatch cho logs và metrics.</li>
-<li>Frontend &amp; Dashboard: React 18 + AWS Amplify Hosting, với Amplify JS cho AppSync subscriptions.</li>
-<li>Backend: AWS Lambda (Python/Node.js) với API Gateway và AppSync.</li>
-<li>Cơ sở dữ liệu: DynamoDB cho dữ liệu chính, tin nhắn chat và interactions.</li>
-<li>Realtime Chat: Sử dụng AppSync subscriptions để push tin nhắn mới đến client trong thời gian thực.</li>
-<li>Ranking: Personalize recipe Personalized-Ranking cho re-ranking dựa trên interactions.</li>
-<li>Notification: SES templates cho email cá nhân hóa, trigger từ Lambda/EventBridge.</li>
-<li>Mục tiêu hiệu năng: Thời gian query &lt;1 giây, latency chat &lt;2 giây, ranking update hàng tuần, uptime ≥99%, tổng chi phí &lt;15 USD.</li>
-</ul>
+<p><strong>Hệ thống quản lý sinh viên</strong>: Dashboard web (CRUD sinh viên, điểm số, khóa học), chat realtime, xếp hạng ML. Frontend React/Next.js chạy trên Amplify Hosting, sử dụng AppSync subscriptions để nhận tin nhắn chat thời gian thực và cập nhật ranking. Cognito xác thực cho 5-10 admin/giáo viên.</p>
+<p><strong>Nền tảng phân tích thông minh</strong>: Kiến thức thực tế về AWS Amplify (hosting React), Lambda (giảm thiểu do SSR xử lý), AWS Personalize (ML ranking), DynamoDB (NoSQL chính), AppSync (GraphQL + subscriptions), và EventBridge (event routing). Sử dụng AWS CDK/SDK để lập trình (ví dụ EventBridge rules tới Lambda cho thông báo). React SSR giúp giảm tải Lambda cho ứng dụng web fullstack.</p>
 <hr>
 <h3 id="5-lộ-trình--mốc-quan-trọng">5. Lộ trình &amp; Mốc quan trọng</h3>
 <p>Dự án được triển khai trong 14 tuần (từ tháng 9 đến tháng 12/2025), chia thành 6 giai đoạn chính theo mô hình Agile.</p>
@@ -522,45 +454,45 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
   </thead>
   <tbody>
       <tr>
-          <td><strong>Phase 1: Foundation Setup</strong></td>
+          <td><strong>1: Thiết lập nền tảng</strong></td>
           <td>Tuần 1–2</td>
           <td>Thiết lập môi trường AWS</td>
-          <td>• AWS account setup<br>• DynamoDB &amp; Cognito config<br>• IaC templates<br></td>
+          <td>• Thiết lập tài khoản AWS<br>• Cấu hình DynamoDB &amp; Cognito<br>• Mẫu IaC<br></td>
           <td>• Hạ tầng AWS hoạt động ổn định<br></td>
       </tr>
       <tr>
-          <td><strong>Phase 2: Backend Deployment</strong></td>
+          <td><strong>2: Triển khai Backend</strong></td>
           <td>Tuần 3–5</td>
           <td>Xây dựng API và logic</td>
-          <td>• Lambda functions<br>• API Gateway &amp; AppSync endpointss</td>
+          <td>• Các hàm Lambda<br>• Các endpoint API Gateway &amp; AppSync</td>
           <td>• CRUD &amp; chat mutations hoạt động</td>
       </tr>
       <tr>
-          <td><strong>Phase 3: Frontend Integration</strong></td>
+          <td><strong>3: Tích hợp Frontend</strong></td>
           <td>Tuần 6–7</td>
           <td>Triển khai dashboard &amp; chat</td>
-          <td>• S3 + CloudFront hosting<br>• Realtime subscriptions integration</td>
+          <td>• Hosting S3 + CloudFront<br>• Tích hợp subscriptions thời gian thực</td>
           <td>• Dashboard &amp; chat truy cập realtime</td>
       </tr>
       <tr>
-          <td><strong>Phase 4: ML &amp; Ranking</strong></td>
+          <td><strong>4: ML &amp; Xếp hạng</strong></td>
           <td>Tuần 8-9</td>
           <td>Tích hợp Personalize</td>
-          <td>• Datasets import<br>• Ranking API</td>
+          <td>• Nhập datasets<br>• API xếp hạng</td>
           <td>• Xếp hạng sinh viên hoạt động</td>
       </tr>
       <tr>
-          <td><strong>Phase 5: Notification &amp; Monitoring</strong></td>
+          <td><strong>5: Thông báo &amp; Giám sát</strong></td>
           <td>Tuần 10–11</td>
           <td>Tích hợp SES &amp; giám sát</td>
-          <td>• Email notifications<br>• CloudWatch alarms<br></td>
+          <td>• Thông báo qua email<br>• Cảnh báo CloudWatch<br></td>
           <td>• Thông báo gửi chính xác</td>
       </tr>
       <tr>
-          <td><strong>Phase 6: Testing &amp; Review</strong></td>
+          <td><strong>6: Kiểm thử &amp; Đánh giá</strong></td>
           <td>Tuần 12–14</td>
           <td>Kiểm thử và hoàn thiện</td>
-          <td>• End-to-end tests<br>• Documentation &amp; Demo</td>
+          <td>• Kiểm thử đầu cuối<br>• Tài liệu &amp; Demo</td>
           <td>• Hệ thống ổn định, demo hoàn thiện</td>
       </tr>
   </tbody>
@@ -584,73 +516,91 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
           <td><strong>Amazon API Gateway</strong></td>
           <td>Xử lý ~1M API calls/tháng</td>
           <td>~$1.00 – $3.50</td>
-          <td>HTTP APIs: $1.00/million calls; REST: $3.50/million; free tier 1M calls.</td>
+          <td>HTTP APIs: $1.00/triệu cuộc gọi; REST: $3.50/triệu; miễn phí 1M cuộc gọi.</td>
       </tr>
       <tr>
           <td><strong>AWS Lambda</strong></td>
-          <td>~1M requests, 400k GB-seconds</td>
+          <td>~1M yêu cầu, 400k GB-giây</td>
           <td>~$0.20 – $0.50</td>
-          <td>Requests: $0.20/million; Duration: $0.0000166667/GB-second; free tier đủ dùng.</td>
+          <td>Yêu cầu: $0.20/triệu; Thời gian: $0.0000166667/GB-giây; miễn phí đủ dùng.</td>
       </tr>
       <tr>
           <td><strong>Amazon DynamoDB</strong></td>
-          <td>~25 GB storage, 2.5M reads/writes</td>
+          <td>~25 GB lưu trữ, 2.5M đọc/ghi</td>
           <td>~$0.25 – $1.25</td>
-          <td>Reads: $0.25/million; Writes: $1.25/million; Storage: $0.25/GB; free tier 25 GB.</td>
+          <td>Đọc: $0.25/triệu; Ghi: $1.25/triệu; Lưu trữ: $0.25/GB; miễn phí 25 GB.</td>
       </tr>
       <tr>
           <td><strong>Amazon Cognito</strong></td>
-          <td>~10k MAUs</td>
+          <td>~10k người dùng hoạt động hàng tháng</td>
           <td>~$0.0055 – $0.015</td>
-          <td>Essentials: $0.015/MAU; free tier 10k MAUs.</td>
+          <td>Cơ bản: $0.015/người dùng; miễn phí 10k người dùng.</td>
       </tr>
       <tr>
           <td><strong>Amazon S3</strong></td>
-          <td>~5 GB storage, requests thấp</td>
+          <td>~5 GB lưu trữ, yêu cầu thấp</td>
           <td>~$0.023 – $0.12</td>
-          <td>Storage: $0.023/GB; Requests: $0.0004/1k GET; free tier credits.</td>
+          <td>Lưu trữ: $0.023/GB; Yêu cầu: $0.0004/1k GET; có tín dụng miễn phí.</td>
       </tr>
       <tr>
           <td><strong>Amazon CloudWatch</strong></td>
-          <td>~5 GB logs, 10 metrics/alarms</td>
+          <td>~5 GB nhật ký, 10 số liệu/cảnh báo</td>
           <td>~$0.03 – $0.50</td>
-          <td>Logs: $0.50/GB ingestion; Storage: $0.03/GB; Metrics: $0.30/metric; free tier 5 GB.</td>
+          <td>Nhật ký: $0.50/GB thu thập; Lưu trữ: $0.03/GB; Số liệu: $0.30/số liệu; miễn phí 5 GB.</td>
       </tr>
       <tr>
           <td><strong>AWS AppSync</strong></td>
-          <td>~1M queries/subscriptions, realtime chat</td>
+          <td>~1M truy vấn/đăng ký, chat thời gian thực</td>
           <td>~$0.50 – $2.00</td>
-          <td>Requests: $4.00/million; Data transfer: $0.09/GB; free tier 250k requests.</td>
+          <td>Yêu cầu: $4.00/triệu; Truyền dữ liệu: $0.09/GB; miễn phí 250k yêu cầu.</td>
       </tr>
       <tr>
           <td><strong>AWS Personalize</strong></td>
-          <td>Train model hàng tuần, ~10k interactions</td>
+          <td>Huấn luyện mô hình hàng tuần, ~10k tương tác</td>
           <td>~$0.50 – $5.00</td>
-          <td>Training: $0.25/giờ; Inference: $0.00005/request; Storage: $0.05/GB.</td>
+          <td>Huấn luyện: $0.25/giờ; Suy luận: $0.00005/yêu cầu; Lưu trữ: $0.05/GB.</td>
       </tr>
       <tr>
           <td><strong>AWS SES</strong></td>
-          <td>~10k emails/tháng</td>
+          <td>~10k email/tháng</td>
           <td>~$0.10 – $0.30</td>
-          <td>$0.10/1k emails; free tier 62k emails/tháng đầu tiên.</td>
+          <td>$0.10/1k email; miễn phí 62k email/tháng đầu tiên.</td>
       </tr>
       <tr>
           <td><strong>Amazon EventBridge</strong></td>
-          <td>~10k events/tháng, rules cho kiểm tra</td>
+          <td>~10k sự kiện/tháng, quy tắc cho kiểm tra</td>
           <td>~$0.10 – $0.50</td>
-          <td>$1.00/million events; free tier 100k events/tháng.</td>
+          <td>$1.00/triệu sự kiện; miễn phí 100k sự kiện/tháng.</td>
       </tr>
       <tr>
           <td><strong>AWS Amplify</strong></td>
-          <td>Hosting dashboard, vài builds/tháng</td>
+          <td>Lưu trữ dashboard, vài lần build/tháng</td>
           <td>~$0.00 – $1.00</td>
-          <td>Build minutes: $0.01/phút; Hosting: $0.15/GB served; free tier available.</td>
+          <td>Phút build: $0.01/phút; Lưu trữ: $0.15/GB phục vụ; có miễn phí.</td>
       </tr>
       <tr>
-          <td><strong>CodePipeline</strong></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><strong>Amazon Route 53</strong></td>
+          <td>Truy vấn DNS, vùng lưu trữ</td>
+          <td>~$0.50 – $1.00</td>
+          <td>Vùng lưu trữ: $0.50/vùng/tháng; Truy vấn DNS: $0.40/triệu truy vấn.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS WAF</strong></td>
+          <td>Đánh giá Web ACL, quy tắc</td>
+          <td>~$1.00 – $3.00</td>
+          <td>Web ACL: $1.00/tháng; Quy tắc: $0.60/triệu yêu cầu; quy tắc quản lý thêm phí.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeBuild</strong></td>
+          <td>~10 lần build/tháng, 100 phút</td>
+          <td>~$0.00 – $0.50</td>
+          <td>$0.005/phút build; miễn phí 100 phút/tháng.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeDeploy</strong></td>
+          <td>Triển khai ứng dụng</td>
+          <td>~$0.00 – $0.20</td>
+          <td>EC2/tại chỗ: $0.02/triển khai; serverless miễn phí.</td>
       </tr>
   </tbody>
 </table>
@@ -665,18 +615,18 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
   </thead>
   <tbody>
       <tr>
-          <td><strong>~$5 – $15 / tháng</strong></td>
-          <td><strong>~$15 – $45 / 3 tháng</strong></td>
-          <td>Phụ thuộc usage thực tế (chat, ranking, emails, events); tận dụng free tier.</td>
+          <td><strong>~$7 – $20 / tháng</strong></td>
+          <td><strong>~$21 – $60 / 3 tháng</strong></td>
+          <td>Phụ thuộc mức sử dụng thực tế (chat, ranking, email, sự kiện); tận dụng gói miễn phí. Thêm chi phí Route53, WAF, CI/CD.</td>
       </tr>
   </tbody>
 </table>
 <h4 id="lưu-ý">Lưu ý</h4>
 <ul>
-<li>Tất cả dịch vụ chính nằm trong Free Tier năm đầu.</li>
-<li>Có thể giảm thêm nếu sử dụng AWS Educate / Credits for Students.</li>
-<li>Personalize &amp; SES chi phí dựa trên volume; tối ưu bằng cách batch processing.</li>
-<li>EventBridge chi phí dựa trên số events; tối ưu bằng cách filter rules.</li>
+<li>Tất cả dịch vụ chính nằm trong gói miễn phí năm đầu.</li>
+<li>Có thể giảm thêm nếu sử dụng AWS Educate / Tín dụng cho sinh viên.</li>
+<li>Personalize &amp; SES chi phí dựa trên khối lượng; tối ưu bằng cách xử lý theo lô.</li>
+<li>EventBridge chi phí dựa trên số sự kiện; tối ưu bằng cách lọc quy tắc.</li>
 </ul>
 <hr>
 <h3 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</h3>
@@ -754,7 +704,7 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
 <li>Hoàn thiện hệ thống serverless quản lý sinh viên với CRUD đầy đủ, chat realtime, ranking ML, thông báo email và xử lý sự kiện kiểm tra.</li>
 <li>Tích hợp API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify, CloudWatch, AppSync, Personalize, SES, EventBridge.</li>
 <li>Thời gian response &lt;1 giây, latency chat &lt;2 giây, event processing &lt;5 giây, uptime ≥99%.</li>
-<li>Chi phí thực tế ≤ $15/3 tháng.</li>
+<li>Chi phí thực tế ≤ $20/3 tháng.</li>
 </ul>
 <p><strong>Kết quả học tập và đào tạo:</strong></p>
 <ul>
@@ -774,47 +724,6 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
 <li>Nền tảng cho lab đào tạo serverless, realtime và event-driven.</li>
 </ul>
 <hr>
-<h3 id="9-tài-liệu-tham-khảo-và-phụ-lục">9. Tài liệu tham khảo và Phụ lục</h3>
-<p><strong>Tài liệu kỹ thuật chính:</strong></p>
-<ul>
-<li><a href="https://docs.aws.amazon.com/serverless-application-model/">AWS Serverless Application Model (SAM)</a></li>
-<li><a href="https://docs.aws.amazon.com/wellarchitected/">AWS Well-Architected Framework</a></li>
-<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html">DynamoDB Best Practices</a></li>
-<li><a href="https://aws.amazon.com/appsync/">AWS AppSync for Realtime Apps</a></li>
-<li><a href="https://docs.aws.amazon.com/personalize/">AWS Personalize Developer Guide</a></li>
-<li><a href="https://docs.aws.amazon.com/ses/">AWS SES Developer Guide</a></li>
-<li><a href="https://aws.amazon.com/amplify/">AWS Amplify Hosting</a></li>
-<li><a href="https://docs.aws.amazon.com/eventbridge/">Amazon EventBridge User Guide</a></li>
-</ul>
-<p><strong>AWS Pricing Calculator Links:</strong></p>
-<ul>
-<li><a href="https://calculator.aws/#/estimate?id=dev-sms-2025">Development Estimate</a></li>
-</ul>
-<p><strong>CloudFormation Templates:</strong></p>
-<ul>
-<li>GitHub Repository: serverless-student-management</li>
-</ul>
-<p><strong>Training Materials:</strong></p>
-<ul>
-<li>Workshop Guide: &ldquo;Building Serverless SMS with Realtime, ML &amp; Notifications&rdquo;</li>
-<li>Hands-on Labs: 15+ scenarios incl. chat, ranking</li>
-</ul>
-<p><strong>Contact Information:</strong></p>
-<ul>
-<li>Project Team: [Tên nhóm]</li>
-<li>Technical Lead: [Tên bạn]</li>
-<li>Institution: [Trường]</li>
-<li>Email: [Email]</li>
-<li>Project Repository: [GitHub URL]</li>
-</ul>
-<p><strong>Success Metrics:</strong></p>
-<ul>
-<li>System Uptime: 99%</li>
-<li>Response Time: &lt;1s</li>
-<li>Chat Latency: &lt;2s</li>
-<li>Cost Control: &lt;$15</li>
-<li>Learning: 10+ services mastered</li>
-</ul>
 
 
 
@@ -887,19 +796,19 @@ Tối ưu chi phí và performance, hoàn thiện tài liệu và demo.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1762741376"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1762741376"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1762741376"></script>
-    <script src="../../js/jquery.sticky.js?1762741376"></script>
-    <script src="../../js/featherlight.min.js?1762741376"></script>
-    <script src="../../js/highlight.pack.js?1762741376"></script>
+    <script src="../../js/clipboard.min.js?1762747133"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1762747133"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1762747133"></script>
+    <script src="../../js/jquery.sticky.js?1762747133"></script>
+    <script src="../../js/featherlight.min.js?1762747133"></script>
+    <script src="../../js/highlight.pack.js?1762747133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1762741376"></script>
-    <script src="../../js/learn.js?1762741376"></script>
-    <script src="../../js/hugo-learn.js?1762741376"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1762747133"></script>
+    <script src="../../js/learn.js?1762747133"></script>
+    <script src="../../js/hugo-learn.js?1762747133"></script>
 
-    <link href="../../mermaid/mermaid.css?1762741376" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1762741376"></script>
+    <link href="../../mermaid/mermaid.css?1762747133" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1762747133"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

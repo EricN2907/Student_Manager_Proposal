@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.150.0">
+    <meta name="generator" content="Hugo 0.152.2">
     <meta
   name="description"
   content=""
@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1762741376" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1762741376" rel="stylesheet">
-    <link href="../css/hybrid.css?1762741376" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1762741376" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1762741376" rel="stylesheet">
-    <link href="../css/auto-complete.css?1762741376" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1762741376" rel="stylesheet">
-    <link href="../css/theme.css?1762741376" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1762741376" rel="stylesheet">
+    <link href="../css/nucleus.css?1762747133" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1762747133" rel="stylesheet">
+    <link href="../css/hybrid.css?1762747133" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1762747133" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1762747133" rel="stylesheet">
+    <link href="../css/auto-complete.css?1762747133" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1762747133" rel="stylesheet">
+    <link href="../css/theme.css?1762747133" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1762747133" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1762741376" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1762747133" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1762741376"></script>
+    <script src="../js/jquery-3.3.1.min.js?1762747133"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1762741376"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1762741376"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1762747133"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1762747133"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1762741376"></script>
+<script type="text/javascript" src="../js/search.js?1762747133"></script>
  
   </div>
 
@@ -367,29 +367,9 @@ The system provides a serverless management system on AWS with capabilities:</p>
   </thead>
   <tbody>
       <tr>
-          <td><strong>Amazon API Gateway</strong></td>
-          <td>Handle API requests and connect frontend-backend</td>
-          <td>Support RESTful APIs, throttling and caching to improve performance</td>
-      </tr>
-      <tr>
-          <td><strong>AWS Lambda</strong></td>
-          <td>Execute CRUD logic without servers</td>
-          <td>Auto-scale, pay-per-use, reduce operational costs</td>
-      </tr>
-      <tr>
-          <td><strong>Amazon DynamoDB</strong></td>
-          <td>Store NoSQL data for student information and chat messages</td>
-          <td>Fast queries, auto-scale, support GSI for complex searches</td>
-      </tr>
-      <tr>
-          <td><strong>Amazon Cognito</strong></td>
-          <td>Manage user authentication and authorization</td>
-          <td>Support MFA, JWT tokens, easy integration with frontend</td>
-      </tr>
-      <tr>
-          <td><strong>Amazon S3</strong></td>
-          <td>Store static files for frontend dashboard</td>
-          <td>Cheap static website hosting, high durability</td>
+          <td><strong>Amazon Route53</strong></td>
+          <td>Route events from management web to process exams (update scores, reminders)</td>
+          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
       </tr>
       <tr>
           <td><strong>Amazon CloudFront</strong></td>
@@ -397,42 +377,28 @@ The system provides a serverless management system on AWS with capabilities:</p>
           <td>Reduce global latency, Edge caching, HTTPS, support HTTP/2 and HTTP/3, integrate WAF/Shield, custom domain (ACM), OAC protects S3</td>
       </tr>
       <tr>
+          <td><strong>Amazon WAF</strong></td>
+          <td>Route events from management web to process exams (update scores, reminders)</td>
+          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
+      </tr>
+      <tr>
           <td><strong>AWS Amplify</strong></td>
           <td>Deploy and host frontend dashboard with CI/CD</td>
           <td>Easy build/deploy web apps, seamless integration with Cognito and AppSync</td>
       </tr>
-      <tr>
-          <td><strong>Amazon CloudWatch</strong></td>
-          <td>Monitor system logs and metrics</td>
-          <td>Real-time monitoring, alarms to detect issues early</td>
-      </tr>
-      <tr>
-          <td><strong>AWS AppSync</strong></td>
-          <td>Support GraphQL API with subscriptions for realtime chat</td>
-          <td>Real-time data updates via WebSockets, easy integration with DynamoDB and Lambda</td>
-      </tr>
-      <tr>
-          <td><strong>AWS Personalize</strong></td>
-          <td>Build ML models to rank students based on activity data</td>
-          <td>Personalized ranking, auto-learn from data, support real-time inference</td>
-      </tr>
-      <tr>
-          <td><strong>AWS SES</strong></td>
-          <td>Send ranking notification emails and system updates</td>
-          <td>Easy integration with Lambda, support millions of emails/month, low cost</td>
-      </tr>
-      <tr>
-          <td><strong>AWS CodePipeline</strong></td>
-          <td>Manage CI/CD pipeline to deploy code and infrastructure</td>
-          <td>Automate deployment, integrate with GitHub/Amplify, reduce manual errors</td>
-      </tr>
-      <tr>
-          <td><strong>Amazon EventBridge</strong></td>
-          <td>Route events from management web to process exams (update scores, reminders)</td>
-          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
-      </tr>
   </tbody>
 </table>
+<p>| <strong>Amazon API Gateway</strong> | Handle API requests and connect frontend-backend | Support RESTful APIs, throttling and caching to improve performance |
+| <strong>AWS Lambda</strong> | Execute CRUD logic without servers | Auto-scale, pay-per-use, reduce operational costs |
+| <strong>Amazon DynamoDB</strong> | Store NoSQL data for student information and chat messages | Fast queries, auto-scale, support GSI for complex searches |
+| <strong>Amazon Cognito</strong> | Manage user authentication and authorization | Support MFA, JWT tokens, easy integration with frontend |
+| <strong>Amazon S3</strong> | Store static files for frontend dashboard | Cheap static website hosting, high durability |</p>
+<p>| <strong>Amazon CloudWatch</strong> | Monitor system logs and metrics | Real-time monitoring, alarms to detect issues early |
+| <strong>AWS AppSync</strong> | Support GraphQL API with subscriptions for realtime chat | Real-time data updates via WebSockets, easy integration with DynamoDB and Lambda |
+| <strong>AWS Personalize</strong> | Build ML models to rank students based on activity data | Personalized ranking, auto-learn from data, support real-time inference |
+| <strong>AWS SES</strong> | Send ranking notification emails and system updates | Easy integration with Lambda, support millions of emails/month, low cost |
+| <strong>AWS CodePipeline</strong> | Manage CI/CD pipeline to deploy code and infrastructure | Automate deployment, integrate with GitHub/Amplify, reduce manual errors |
+| <strong>Amazon EventBridge</strong> | Route events from management web to process exams (update scores, reminders) | Event-driven architecture, integrate with Lambda to automate workflows |</p>
 <h4 id="detailed-layer-design">Detailed Layer Design</h4>
 <p><strong>1. Frontend Layer (User Interface Layer)</strong></p>
 <pre tabindex="0"><code>Static Hosting &amp; Delivery
@@ -971,19 +937,19 @@ Dựa trên NIST Risk Management Framework, nhóm dự án xác định các r�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1762741376"></script>
-    <script src="../js/perfect-scrollbar.min.js?1762741376"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1762741376"></script>
-    <script src="../js/jquery.sticky.js?1762741376"></script>
-    <script src="../js/featherlight.min.js?1762741376"></script>
-    <script src="../js/highlight.pack.js?1762741376"></script>
+    <script src="../js/clipboard.min.js?1762747133"></script>
+    <script src="../js/perfect-scrollbar.min.js?1762747133"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1762747133"></script>
+    <script src="../js/jquery.sticky.js?1762747133"></script>
+    <script src="../js/featherlight.min.js?1762747133"></script>
+    <script src="../js/highlight.pack.js?1762747133"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1762741376"></script>
-    <script src="../js/learn.js?1762741376"></script>
-    <script src="../js/hugo-learn.js?1762741376"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1762747133"></script>
+    <script src="../js/learn.js?1762747133"></script>
+    <script src="../js/hugo-learn.js?1762747133"></script>
 
-    <link href="../mermaid/mermaid.css?1762741376" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1762741376"></script>
+    <link href="../mermaid/mermaid.css?1762747133" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1762747133"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

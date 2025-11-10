@@ -1,0 +1,25 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Tự động deploy khi bạn push code lên nhánh main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true      # 👈 Quan trọng nếu bạn dùng theme Hugo nằm trong /themes/
+          fetch-depth: 0        # Đảm bảo lấy đủ dữ liệu để build
+
+      - name: Setup Hugo
+        u

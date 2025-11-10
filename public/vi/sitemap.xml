@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ericn2907.github.io/Student_Manager_Proposal/vi/proposal/</loc>
+    <loc>http://localhost:1313/Student_Manager_Proposal/vi/proposal/</loc>
     <lastmod>2025-11-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/proposal/"
+                href="http://localhost:1313/Student_Manager_Proposal/proposal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/vi/proposal/"
+                href="http://localhost:1313/Student_Manager_Proposal/vi/proposal/"
                 />
   </url><url>
-    <loc>https://ericn2907.github.io/Student_Manager_Proposal/vi/</loc>
+    <loc>http://localhost:1313/Student_Manager_Proposal/vi/</loc>
     <lastmod>2025-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/"
+                href="http://localhost:1313/Student_Manager_Proposal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/vi/"
+                href="http://localhost:1313/Student_Manager_Proposal/vi/"
                 />
   </url><url>
-    <loc>https://ericn2907.github.io/Student_Manager_Proposal/vi/categories/</loc>
+    <loc>http://localhost:1313/Student_Manager_Proposal/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/categories/"
+                href="http://localhost:1313/Student_Manager_Proposal/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/vi/categories/"
+                href="http://localhost:1313/Student_Manager_Proposal/vi/categories/"
                 />
   </url><url>
-    <loc>https://ericn2907.github.io/Student_Manager_Proposal/vi/tags/</loc>
+    <loc>http://localhost:1313/Student_Manager_Proposal/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/tags/"
+                href="http://localhost:1313/Student_Manager_Proposal/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://ericn2907.github.io/Student_Manager_Proposal/vi/tags/"
+                href="http://localhost:1313/Student_Manager_Proposal/vi/tags/"
                 />
   </url>
 </urlset>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Proposal on Internship Report</title>
-    <link>http://localhost:1313/proposal/</link>
+    <link>https://ericn2907.github.io/proposal/</link>
     <description>Recent content in Proposal on Internship Report</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/proposal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ericn2907.github.io/proposal/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

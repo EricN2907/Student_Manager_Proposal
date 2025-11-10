@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/vi/proposal/</loc>
+    <loc>https://ericn2907.github.io/vi/proposal/</loc>
     <lastmod>2025-11-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/proposal/"
+                href="https://ericn2907.github.io/proposal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/proposal/"
+                href="https://ericn2907.github.io/vi/proposal/"
                 />
   </url><url>
-    <loc>http://localhost:1313/vi/</loc>
+    <loc>https://ericn2907.github.io/vi/</loc>
     <lastmod>2025-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://ericn2907.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/"
+                href="https://ericn2907.github.io/vi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/vi/categories/</loc>
+    <loc>https://ericn2907.github.io/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://ericn2907.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/categories/"
+                href="https://ericn2907.github.io/vi/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/vi/tags/</loc>
+    <loc>https://ericn2907.github.io/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://ericn2907.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/tags/"
+                href="https://ericn2907.github.io/vi/tags/"
                 />
   </url>
 </urlset>

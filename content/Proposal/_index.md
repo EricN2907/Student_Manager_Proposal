@@ -57,13 +57,18 @@ The system is designed following the AWS Well-Architected Framework with interco
 
 | **Service** | **Primary Function** | **Key Benefits** |
 |--------------|---------------------|----------------------|
+| **Amazon Route53** | Route events from management web to process exams (update scores, reminders) | Event-driven architecture, integrate with Lambda to automate workflows |
+| **Amazon CloudFront** | CDN distribution for static website and frontend resources | Reduce global latency, Edge caching, HTTPS, support HTTP/2 and HTTP/3, integrate WAF/Shield, custom domain (ACM), OAC protects S3 |
+| **Amazon WAF** | Route events from management web to process exams (update scores, reminders) | Event-driven architecture, integrate with Lambda to automate workflows |
+| **AWS Amplify** | Deploy and host frontend dashboard with CI/CD | Easy build/deploy web apps, seamless integration with Cognito and AppSync |
+
 | **Amazon API Gateway** | Handle API requests and connect frontend-backend | Support RESTful APIs, throttling and caching to improve performance |
 | **AWS Lambda** | Execute CRUD logic without servers | Auto-scale, pay-per-use, reduce operational costs |
 | **Amazon DynamoDB** | Store NoSQL data for student information and chat messages | Fast queries, auto-scale, support GSI for complex searches |
 | **Amazon Cognito** | Manage user authentication and authorization | Support MFA, JWT tokens, easy integration with frontend |
 | **Amazon S3** | Store static files for frontend dashboard | Cheap static website hosting, high durability |
-| **Amazon CloudFront** | CDN distribution for static website and frontend resources | Reduce global latency, Edge caching, HTTPS, support HTTP/2 and HTTP/3, integrate WAF/Shield, custom domain (ACM), OAC protects S3 |
-| **AWS Amplify** | Deploy and host frontend dashboard with CI/CD | Easy build/deploy web apps, seamless integration with Cognito and AppSync |
+
+
 | **Amazon CloudWatch** | Monitor system logs and metrics | Real-time monitoring, alarms to detect issues early |
 | **AWS AppSync** | Support GraphQL API with subscriptions for realtime chat | Real-time data updates via WebSockets, easy integration with DynamoDB and Lambda |
 | **AWS Personalize** | Build ML models to rank students based on activity data | Personalized ranking, auto-learn from data, support real-time inference |

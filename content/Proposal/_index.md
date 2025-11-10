@@ -50,9 +50,8 @@ The system provides a serverless management system on AWS with capabilities:
 
 The system is designed following the AWS Well-Architected Framework with interconnected layers, ensuring data management capabilities, authentication, monitoring, real-time communication, ML ranking, notifications, and continuous event processing. The serverless architecture helps optimize costs and ensures automatic scalability.
 
-![Cloud Security & Monitoring System Architecture](/images/2-Proposal/edge_architecture.jpeg)
 
-![Platform Architecture Diagram](/images/2-Proposal/platform_architecture.jpeg)
+![Platform Architecture Diagram](/images/2-Proposal/solution.drawio.png)
 
 #### AWS Core Services Used
 

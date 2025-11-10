@@ -51,9 +51,9 @@ Hệ thống cung cấp hệ thống quản lý serverless trên AWS với khả
 
 Hệ thống được thiết kế theo kiến trúc AWS Well-Architected Framework với các tầng liên kết, đảm bảo khả năng quản lý dữ liệu, xác thực, giám sát, giao tiếp realtime, xếp hạng ML, thông báo và xử lý sự kiện liên tục. Kiến trúc serverless giúp tối ưu chi phí và đảm bảo khả năng mở rộng tự động.
 
-![Cloud Security & Monitoring System Architecture](/images/2-Proposal/edge_architecture.jpeg)
+<!-- ![Cloud Security & Monitoring System Architecture](/images/2-Proposal/edge_architecture.jpeg) -->
 
-![Platform Architecture Diagram](/images/2-Proposal/platform_architecture.jpeg)
+![Platform Architecture Diagram](/images/2-Proposal/solution.drawio.png)
 
 #### Dịch vụ AWS Core được sử dụng
 

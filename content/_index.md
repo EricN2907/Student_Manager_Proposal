@@ -16,9 +16,9 @@ chapter: false
 
 &emsp; **Nguyễn Nhật Kim Ngân** --- Front-End, Business Analysis --- phipbse185046@fpt.edu.vn --- 0333 982 942
 
-&emsp; **Đặng Huy Hoàng** --- Back-End --- hoangdhse184661@fpt.edu.vn --- 0394067220
+&emsp; **Đặng Huy Hoàng** --- Front-End, Back-End --- hoangdhse184661@fpt.edu.vn --- 0394067220
 
-&emsp; **Lâm Thanh Phúc** --- Front-End, Back-End --- phucltse184678@fpt.edu.vn --- 0911797901
+&emsp; **Lâm Thanh Phúc** --- Back-End --- phucltse184678@fpt.edu.vn --- 0911797901
 
 
 ### Report Content

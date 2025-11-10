@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.150.0">
     <meta
   name="description"
   content=""
@@ -15,21 +15,21 @@
     <title>Bản đề xuất :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1762747133" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1762747133" rel="stylesheet">
-    <link href="../../css/hybrid.css?1762747133" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1762747133" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1762747133" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1762747133" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1762747133" rel="stylesheet">
-    <link href="../../css/theme.css?1762747133" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1762747133" rel="stylesheet">
+    <link href="../../css/nucleus.css?1762757814" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1762757814" rel="stylesheet">
+    <link href="../../css/hybrid.css?1762757814" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1762757814" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1762757814" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1762757814" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1762757814" rel="stylesheet">
+    <link href="../../css/theme.css?1762757814" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1762757814" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1762747133" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1762757814" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1762747133"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1762757814"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1762747133"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1762747133"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1762757814"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1762757814"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1762747133"></script>
+<script type="text/javascript" src="../../js/search.js?1762757814"></script>
  
   </div>
 
@@ -316,7 +316,8 @@
 
 	<h1 id="serverless-student-management-system">Serverless Student Management System</h1>
 <h3 id="1-tóm-tắt-điều-hành">1. Tóm tắt điều hành</h3>
-<p>Serverless Student Management Platform được thiết kế dành cho các tổ chức giáo dục và doanh nghiệp nhỏ nhằm nâng cao khả năng quản lý và phân tích dữ liệu sinh viên. Nền tảng hỗ trợ tối đa 50-100 sinh viên, có khả năng mở rộng lên 500–1000 sinh viên, sử dụng giao diện web kết hợp API để truyền dữ liệu thời gian thực. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp quản lý tập trung, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5-10 giáo viên/admin thông qua Amazon Cognito.</p>
+<p>Serverless Student Management Platform là nền tảng quản lý sinh viên dựa trên đám mây, được thiết kế dành cho các tổ chức giáo dục và doanh nghiệp nhỏ nhằm nâng cao khả năng quản lý, phân tích và tương tác với dữ liệu sinh viên. Nền tảng hỗ trợ tối đa 50-100 sinh viên ban đầu, với khả năng mở rộng linh hoạt lên đến 500–1000 sinh viên mà không cần thay đổi hạ tầng lớn, nhờ sử dụng các dịch vụ AWS Serverless như Lambda, DynamoDB, AppSync và EventBridge.</p>
+<p>Người dùng có thể truy cập qua giao diện web thân thiện (hỗ trợ chat real-time cho bài tập và bình luận) kết hợp với API để truyền dữ liệu thời gian thực, đảm bảo tính tương tác cao. Nền tảng tận dụng AWS để cung cấp quản lý tập trung (lưu trữ dữ liệu an toàn), phân tích dự đoán (qua Personalize cho ranking điểm số và recommendation), gửi thông báo nhắc nhở (qua SES), và giám sát hệ thống (qua CloudWatch), đồng thời tối ưu hóa chi phí bằng cách chỉ tính phí theo sử dụng thực tế.</p>
 <h3 id="2-tuyên-bố-vấn-đề">2. Tuyên bố vấn đề</h3>
 <p><strong>Vấn đề hiện tại</strong></p>
 <p>Các hệ thống quản lý sinh viên hiện tại yêu cầu nhập dữ liệu thủ công, khó quản lý khi có nhiều lớp học. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp. Thiếu tính năng trao đổi realtime dẫn đến giao tiếp chậm trễ, thiếu cơ chế khuyến khích như xếp hạng chăm chỉ, và xử lý sự kiện kiểm tra thủ công.</p>
@@ -324,7 +325,6 @@
 <p>Nền tảng sử dụng Amazon API Gateway để tiếp nhận yêu cầu REST, AWS Lambda xử lý logic nghiệp vụ, Amazon DynamoDB để lưu trữ dữ liệu sinh viên và điểm số, và AWS AppSync cùng GraphQL để cung cấp giao tiếp realtime. AWS Amplify với React/Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như các hệ thống LMS truyền thống nhưng với chi phí thấp hơn, người dùng có thể đăng ký sinh viên mới và quản lý thông tin, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích học tập. Các tính năng chính bao gồm dashboard quản lý thời gian thực, phân tích xu hướng học tập và chi phí vận hành thấp.</p>
 <p><strong>Lợi ích và hoàn vốn đầu tư (ROI)</strong></p>
 <p>Giải pháp tạo nền tảng cơ bản để các sinh viên IT phát triển kỹ năng AWS serverless, đồng thời cung cấp công cụ quản lý hiệu quả cho giáo viên phục vụ giảng dạy và đánh giá. Nền tảng giảm bớt báo cáo thủ công cho từng lớp học thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính $7-20 USD (theo AWS Pricing Calculator), tổng cộng $21-60 USD cho 3 tháng. Tất cả tài nguyên AWS được sử dụng trong free tier và giá rẻ, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 3-6 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công và nâng cao hiệu quả giảng dạy.</p>
-<hr>
 <h3 id="3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</h3>
 <p>Hệ thống được thiết kế theo kiến trúc AWS Well-Architected Framework với các tầng liên kết, đảm bảo khả năng quản lý dữ liệu, xác thực, giám sát, giao tiếp realtime, xếp hạng ML, thông báo và xử lý sự kiện liên tục. Kiến trúc serverless giúp tối ưu chi phí và đảm bảo khả năng mở rộng tự động.</p>
 <!-- ![Cloud Security & Monitoring System Architecture](/images/2-Proposal/edge_architecture.jpeg) -->
@@ -341,92 +341,189 @@
   <tbody>
       <tr>
           <td><strong>Amazon Route 53</strong></td>
-          <td>DNS management và routing traffic đến CloudFront</td>
-          <td>Custom domain setup, health checks, geo-routing, tích hợp SSL certificates</td>
+          <td>Quản lý DNS và routing traffic đến CloudFront</td>
+          <td>Thiết lập domain tùy chỉnh, health checks, geo-routing, tích hợp SSL để đảm bảo truy cập an toàn và nhanh chóng.</td>
       </tr>
       <tr>
           <td><strong>Amazon CloudFront</strong></td>
-          <td>Phân phối CDN cho website tĩnh và tài nguyên frontend</td>
-          <td>Giảm latency toàn cầu, caching tại Edge, HTTPS, hỗ trợ HTTP/2 và HTTP/3, tích hợp WAF/Shield, custom domain (ACM), OAC bảo vệ S3</td>
+          <td>Phân phối CDN cho nội dung tĩnh và tài nguyên frontend</td>
+          <td>Giảm độ trễ toàn cầu, caching tại edge locations, hỗ trợ HTTPS, tích hợp WAF để bảo vệ và OAC cho S3.</td>
       </tr>
       <tr>
           <td><strong>AWS WAF</strong></td>
-          <td>Web Application Firewall bảo vệ khỏi attacks</td>
-          <td>Block malicious requests, rate limiting, IP filtering, tích hợp với CloudFront</td>
+          <td>Firewall bảo vệ ứng dụng web khỏi các tấn công</td>
+          <td>Chặn request độc hại, rate limiting, lọc IP, tích hợp liền mạch với CloudFront để bảo mật traffic.</td>
       </tr>
       <tr>
           <td><strong>AWS Amplify</strong></td>
-          <td>Triển khai và hosting frontend dashboard với CI/CD</td>
-          <td>Dễ dàng build/deploy apps web, tích hợp seamless với Cognito và AppSync</td>
+          <td>Hosting và triển khai frontend với CI/CD</td>
+          <td>Xây dựng và deploy ứng dụng web nhanh chóng, tích hợp với Cognito/AppSync cho giao diện thân thiện và chat real-time.</td>
       </tr>
       <tr>
           <td><strong>AWS AppSync</strong></td>
-          <td>Hỗ trợ GraphQL API với subscriptions cho chat realtime</td>
-          <td>Cập nhật dữ liệu thời gian thực qua WebSockets, tích hợp dễ với DynamoDB và Lambda</td>
+          <td>Hỗ trợ GraphQL API với subscriptions cho chat real-time</td>
+          <td>Cập nhật dữ liệu thời gian thực qua WebSockets, tích hợp với DynamoDB/Lambda để xử lý bình luận bài tập và tương tác sinh viên.</td>
       </tr>
       <tr>
           <td><strong>Amazon API Gateway</strong></td>
-          <td>Xử lý yêu cầu API và kết nối frontend-backend</td>
-          <td>Hỗ trợ RESTful APIs, throttling và caching để tăng hiệu suất</td>
+          <td>Xử lý và routing yêu cầu API từ frontend đến backend</td>
+          <td>XHỗ trợ REST/HTTP APIs, throttling, caching, và authorizer để tăng hiệu suất và bảo mật.</td>
       </tr>
       <tr>
           <td><strong>Amazon Cognito</strong></td>
           <td>Quản lý xác thực và ủy quyền người dùng</td>
-          <td>Hỗ trợ MFA, JWT tokens, dễ tích hợp với frontend</td>
+          <td>Hỗ trợ MFA, JWT tokens, groups cho phân quyền (giáo viên/admin vs. học sinh), tích hợp dễ với AppSync/API Gateway.</td>
       </tr>
       <tr>
           <td><strong>AWS Lambda</strong></td>
-          <td>Thực thi logic CRUD mà không cần server</td>
-          <td>Tự động scale, pay-per-use, giảm chi phí vận hành</td>
+          <td>Thực thi logic backend và xử lý sự kiện</td>
+          <td>Serverless, tự động scale, pay-per-use, xử lý CRUD, events từ EventBridge và ML inference từ Personalize.</td>
       </tr>
       <tr>
           <td><strong>Amazon DynamoDB</strong></td>
-          <td>Lưu trữ dữ liệu NoSQL cho thông tin sinh viên và tin nhắn chat</td>
-          <td>Query nhanh, tự động scale, hỗ trợ GSI cho tìm kiếm phức tạp</td>
+          <td>Lưu trữ dữ liệu NoSQL cho thông tin sinh viên, chat và bài tập</td>
+          <td>Query nhanh, tự động scale, hỗ trợ Global Secondary Indexes (GSI) cho tìm kiếm phức tạp và chi phí thấp.</td>
       </tr>
       <tr>
           <td><strong>Amazon CloudWatch</strong></td>
-          <td>Giám sát logs và metrics hệ thống</td>
-          <td>Real-time monitoring, alarms để phát hiện vấn đề sớm</td>
+          <td>Giám sát logs, metrics và alarms hệ thống</td>
+          <td>Theo dõi real-time, thiết lập alarms để phát hiện vấn đề sớm, tích hợp với Lambda/DynamoDB để tối ưu hóa.</td>
       </tr>
       <tr>
           <td><strong>Amazon S3</strong></td>
-          <td>Lưu trữ file tĩnh cho dashboard frontend</td>
-          <td>Hosting static website rẻ tiền, bền vững cao</td>
+          <td>Lưu trữ artifact và build từ CI/CD</td>
+          <td>Hosting static files rẻ tiền, bền vững cao, tích hợp với CodePipeline để lưu artifact deploy.</td>
       </tr>
       <tr>
           <td><strong>Amazon EventBridge</strong></td>
-          <td>Routing sự kiện từ web quản lý để xử lý kiểm tra (cập nhật điểm, nhắc nhở)</td>
-          <td>Event-driven architecture, tích hợp với Lambda để tự động hóa quy trình</td>
+          <td>Routing sự kiện để xử lý kiểm tra, thông báo và ranking</td>
+          <td>Event-driven, tích hợp với Lambda/SES để tự động hóa quy trình như cập nhật điểm và nhắc nhở.</td>
       </tr>
       <tr>
           <td><strong>AWS Personalize</strong></td>
           <td>Xây dựng mô hình ML để xếp hạng sinh viên dựa trên dữ liệu hoạt động</td>
-          <td>Cá nhân hóa xếp hạng, tự động học từ dữ liệu, hỗ trợ real-time inference</td>
+          <td>Cá nhân hóa thứ hạng dựa trên dữ liệu hoạt động, hỗ trợ real-time inference, tự động học từ dữ liệu DynamoDB.</td>
       </tr>
       <tr>
           <td><strong>AWS SES</strong></td>
-          <td>Gửi email thông báo xếp hạng và cập nhật hệ thống</td>
-          <td>Tích hợp dễ dàng với Lambda, hỗ trợ hàng triệu email/tháng, chi phí thấp</td>
+          <td>Gửi email thông báo qua web xếp hạng và cập nhật hệ thống</td>
+          <td>Gửi hàng loạt email đáng tin cậy, tích hợp với EventBridge/Lambda, chi phí thấp cho quy mô nhỏ.</td>
       </tr>
       <tr>
           <td><strong>AWS CodeBuild</strong></td>
           <td>Build và test code từ GitLab repository</td>
-          <td>Tự động compile, package artifacts, run unit tests trong pipeline</td>
+          <td>Tự động compile, package artifacts, chạy unit tests trong pipeline, hỗ trợ multi-environment.</td>
       </tr>
       <tr>
           <td><strong>AWS CodeDeploy</strong></td>
-          <td>Deploy applications lên các AWS services</td>
-          <td>Blue/green deployment, rollback capabilities, zero-downtime deployment</td>
+          <td>Triển khai ứng dụng lên các dịch vụ AWS</td>
+          <td>Hỗ trợ blue/green deployment, rollback tự động, zero-downtime cho Lambda/Amplify.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodePipeline</strong></td>
+          <td>Orchestrate CI/CD pipeline từ source đến deploy</td>
+          <td>Tự động hóa toàn bộ quy trình, tích hợp với GitLab/CodeBuild/CodeDeploy, hỗ trợ approvals và notifications.</td>
       </tr>
       <tr>
           <td><strong>GitLab</strong></td>
-          <td>Source control và trigger CI/CD pipeline</td>
-          <td>Version control, merge requests, issue tracking, webhook integration</td>
+          <td>Quản lý source code và trigger CI/CD</td>
+          <td>Version control, merge requests, issue tracking, webhook tích hợp với CodePipeline để automate deploy.</td>
       </tr>
   </tbody>
 </table>
-<hr>
+<h4 id="thiết-kế-thành-phần">Thiết kế thành phần</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Layer</strong></th>
+          <th><strong>Thành phần chính</strong></th>
+          <th><strong>Chức năng</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Edge Layer</strong></td>
+          <td>Route53, CloudFront, WAF</td>
+          <td>DNS, CDN, bảo mật lớp ngoài</td>
+      </tr>
+      <tr>
+          <td><strong>Frontend Layer</strong></td>
+          <td>Amplify, AppSync, Cognito</td>
+          <td>Giao diện web, realtime chat, xác thực</td>
+      </tr>
+      <tr>
+          <td><strong>Backend Layer</strong></td>
+          <td>API Gateway, Lambda, DynamoDB</td>
+          <td>Xử lý logic, CRUD, lưu trữ dữ liệu</td>
+      </tr>
+      <tr>
+          <td><strong>Event &amp; ML Layer</strong></td>
+          <td>EventBridge, SES, Personalize</td>
+          <td>Gửi thông báo, xử lý ML ranking</td>
+      </tr>
+      <tr>
+          <td><strong>Monitoring Layer</strong></td>
+          <td>CloudWatch</td>
+          <td>Logs, metrics, alerts</td>
+      </tr>
+      <tr>
+          <td><strong>CI/CD Layer</strong></td>
+          <td>GitLab, CodePipeline, CodeBuild, CodeDeploy, S3</td>
+          <td>Tự động hóa build &amp; deploy</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="chú-thích-luồng-chính">Chú thích luồng chính</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Luồng</strong></th>
+          <th><strong>Mô tả</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>(1)</strong></td>
+          <td>User truy cập qua Route53 → CloudFront → Amplify (frontend).</td>
+      </tr>
+      <tr>
+          <td><strong>(2)</strong></td>
+          <td>Amplify giao tiếp với API Gateway hoặc AppSync để gửi/nhận dữ liệu.</td>
+      </tr>
+      <tr>
+          <td><strong>(3.1)</strong></td>
+          <td>API Gateway → Lambda để xử lý logic (CRUD, event, v.v.).</td>
+      </tr>
+      <tr>
+          <td><strong>(3.2)</strong></td>
+          <td>Cognito xác thực và trả token.</td>
+      </tr>
+      <tr>
+          <td><strong>(4)</strong></td>
+          <td>Lambda phát sự kiện qua EventBridge.</td>
+      </tr>
+      <tr>
+          <td><strong>(4.1)</strong></td>
+          <td>EventBridge → SES gửi email nhắc nhở.</td>
+      </tr>
+      <tr>
+          <td><strong>(4.2)</strong></td>
+          <td>EventBridge → Lambda → Personalize cho ML ranking.</td>
+      </tr>
+      <tr>
+          <td><strong>(5)</strong></td>
+          <td>Dev push code lên GitLab → CodePipeline pull → CodeBuild/CodeDeploy → Amplify/Lambda.</td>
+      </tr>
+      <tr>
+          <td><strong>(6)</strong></td>
+          <td>CloudWatch thu thập logs và metrics.</td>
+      </tr>
+      <tr>
+          <td><strong>(7)</strong></td>
+          <td>AppSync gửi dữ liệu realtime (chat/notifications) đến frontend.</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="4-triển-khai-kỹ-thuật">4. Triển khai kỹ thuật</h3>
 <h4 id="các-giai-đoạn-triển-khai">Các giai đoạn triển khai</h4>
 <p>Dự án gồm 2 phần — phát triển hệ thống quản lý sinh viên serverless và xây dựng nền tảng phân tích thông minh — mỗi phần trải qua 4 giai đoạn:</p>
@@ -437,9 +534,8 @@
 <li><strong>Phát triển, kiểm thử, triển khai</strong>: Lập trình React frontend, AWS services với CDK/SDK và AppSync subscriptions, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).</li>
 </ol>
 <h4 id="yêu-cầu-kỹ-thuật">Yêu cầu kỹ thuật</h4>
-<p><strong>Hệ thống quản lý sinh viên</strong>: Dashboard web (CRUD sinh viên, điểm số, khóa học), chat realtime, xếp hạng ML. Frontend React/Next.js chạy trên Amplify Hosting, sử dụng AppSync subscriptions để nhận tin nhắn chat thời gian thực và cập nhật ranking. Cognito xác thực cho 5-10 admin/giáo viên.</p>
+<p><strong>Hệ thống quản lý sinh viên</strong>: Dashboard web (CRUD sinh viên, điểm số, khóa học), chat realtime, xếp hạng ML. Frontend React/Next.js chạy trên Amplify Hosting, sử dụng AppSync subscriptions để nhận tin nhắn chat thời gian thực và cập nhật ranking. Cognito xác thực và phân quyền cho tất cả người dùng, bao gồm 5-10 admin/giáo viên (với quyền cao như CRUD dữ liệu) và học sinh (với quyền giới hạn như xem điểm số cá nhân, tham gia chat).</p>
 <p><strong>Nền tảng phân tích thông minh</strong>: Kiến thức thực tế về AWS Amplify (hosting React), Lambda (giảm thiểu do SSR xử lý), AWS Personalize (ML ranking), DynamoDB (NoSQL chính), AppSync (GraphQL + subscriptions), và EventBridge (event routing). Sử dụng AWS CDK/SDK để lập trình (ví dụ EventBridge rules tới Lambda cho thông báo). React SSR giúp giảm tải Lambda cho ứng dụng web fullstack.</p>
-<hr>
 <h3 id="5-lộ-trình--mốc-quan-trọng">5. Lộ trình &amp; Mốc quan trọng</h3>
 <p>Dự án được triển khai trong 14 tuần (từ tháng 9 đến tháng 12/2025), chia thành 6 giai đoạn chính theo mô hình Agile.</p>
 <table>
@@ -497,7 +593,6 @@
       </tr>
   </tbody>
 </table>
-<hr>
 <h3 id="6-ước-tính-ngân-sách">6. Ước tính ngân sách</h3>
 <p>Có thể xem chi phí trên <a href="https://calculator.aws/#/estimate?id=security-monitoring-2025">AWS Pricing Calculator</a> hoặc tải <a href="./budget-estimate.xlsx">tệp ước tính ngân sách</a>.</p>
 <h4 id="chi-phí-hạ-tầng">Chi phí hạ tầng</h4>
@@ -602,6 +697,18 @@
           <td>~$0.00 – $0.20</td>
           <td>EC2/tại chỗ: $0.02/triển khai; serverless miễn phí.</td>
       </tr>
+      <tr>
+          <td><strong>Amazon CloudFront</strong></td>
+          <td>CDN phân phối nội dung tĩnh (kết nối Route53 &amp; Amplify/S3)</td>
+          <td>~$0.10 – $1.00</td>
+          <td>Miễn phí 1 TB/tháng đầu tiên trong Free Tier; $0.085/GB sau đó.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodePipeline</strong></td>
+          <td>Tự động hóa CI/CD (kết nối GitLab → CodeBuild → CodeDeploy)</td>
+          <td>~$1.00</td>
+          <td>$1.00/tháng cho mỗi pipeline đang hoạt động.</td>
+      </tr>
   </tbody>
 </table>
 <h4 id="tổng-cộng-ước-tính">Tổng cộng ước tính</h4>
@@ -628,7 +735,6 @@
 <li>Personalize &amp; SES chi phí dựa trên khối lượng; tối ưu bằng cách xử lý theo lô.</li>
 <li>EventBridge chi phí dựa trên số sự kiện; tối ưu bằng cách lọc quy tắc.</li>
 </ul>
-<hr>
 <h3 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</h3>
 <p>Dựa trên NIST Risk Management Framework, nhóm dự án xác định các rủi ro chính và biện pháp giảm thiểu.</p>
 <table>
@@ -697,7 +803,6 @@
 <li>Communication: CloudWatch alarms gửi email.</li>
 <li>Continuous Improvement: Review hàng tuần, bao gồm performance chat, ranking và event handling.</li>
 </ul>
-<hr>
 <h3 id="8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng</h3>
 <p><strong>Kết quả kỹ thuật:</strong></p>
 <ul>
@@ -723,7 +828,6 @@
 <li>Dễ mở rộng sang mobile app hoặc AI analytics nâng cao.</li>
 <li>Nền tảng cho lab đào tạo serverless, realtime và event-driven.</li>
 </ul>
-<hr>
 
 
 
@@ -796,19 +900,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1762747133"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1762747133"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1762747133"></script>
-    <script src="../../js/jquery.sticky.js?1762747133"></script>
-    <script src="../../js/featherlight.min.js?1762747133"></script>
-    <script src="../../js/highlight.pack.js?1762747133"></script>
+    <script src="../../js/clipboard.min.js?1762757814"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1762757814"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1762757814"></script>
+    <script src="../../js/jquery.sticky.js?1762757814"></script>
+    <script src="../../js/featherlight.min.js?1762757814"></script>
+    <script src="../../js/highlight.pack.js?1762757814"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1762747133"></script>
-    <script src="../../js/learn.js?1762747133"></script>
-    <script src="../../js/hugo-learn.js?1762747133"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1762757814"></script>
+    <script src="../../js/learn.js?1762757814"></script>
+    <script src="../../js/hugo-learn.js?1762757814"></script>
 
-    <link href="../../mermaid/mermaid.css?1762747133" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1762747133"></script>
+    <link href="../../mermaid/mermaid.css?1762757814" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1762757814"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.150.0">
     <meta
   name="description"
   content=""
@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1762747133" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1762747133" rel="stylesheet">
-    <link href="../css/hybrid.css?1762747133" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1762747133" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1762747133" rel="stylesheet">
-    <link href="../css/auto-complete.css?1762747133" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1762747133" rel="stylesheet">
-    <link href="../css/theme.css?1762747133" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1762747133" rel="stylesheet">
+    <link href="../css/nucleus.css?1762757814" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1762757814" rel="stylesheet">
+    <link href="../css/hybrid.css?1762757814" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1762757814" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1762757814" rel="stylesheet">
+    <link href="../css/auto-complete.css?1762757814" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1762757814" rel="stylesheet">
+    <link href="../css/theme.css?1762757814" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1762757814" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1762747133" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1762757814" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1762747133"></script>
+    <script src="../js/jquery-3.3.1.min.js?1762757814"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1762747133"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1762747133"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1762757814"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1762757814"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1762747133"></script>
+<script type="text/javascript" src="../js/search.js?1762757814"></script>
  
   </div>
 
@@ -280,16 +280,14 @@
   <ul>
     <li><a href="#cloud-based-serverless-student-management-system-for-students-and-small-businesses">Cloud-based serverless student management system for students and small businesses</a>
       <ul>
-        <li><a href="#cloud-based-serverless-student-management-system-for-students-and-small-businesses-1">Cloud-based serverless student management system for students and small businesses</a></li>
         <li><a href="#1-executive-summary">1. Executive Summary</a></li>
-        <li><a href="#2-problem-analysis">2. Problem Analysis</a></li>
+        <li><a href="#2-problem-statement">2. Problem Statement</a></li>
         <li><a href="#3-solution-architecture">3. Solution Architecture</a></li>
         <li><a href="#4-technical-implementation">4. Technical Implementation</a></li>
         <li><a href="#5-roadmap--key-milestones">5. Roadmap &amp; Key Milestones</a></li>
         <li><a href="#6-budget-estimate">6. Budget Estimate</a></li>
         <li><a href="#7-risk-assessment">7. Risk Assessment</a></li>
         <li><a href="#8-expected-results">8. Expected Results</a></li>
-        <li><a href="#9-references-and-appendix">9. References and Appendix</a></li>
       </ul>
     </li>
   </ul>
@@ -318,41 +316,16 @@
 
 	<h1 id="serverless-student-management-system">Serverless Student Management System</h1>
 <h2 id="cloud-based-serverless-student-management-system-for-students-and-small-businesses">Cloud-based serverless student management system for students and small businesses</h2>
-<h3 id="cloud-based-serverless-student-management-system-for-students-and-small-businesses-1">Cloud-based serverless student management system for students and small businesses</h3>
 <h3 id="1-executive-summary">1. Executive Summary</h3>
-<p>The Serverless Student Management System is a student management platform built on AWS Serverless Architecture, simulating a simple data management system for educational institutions and small businesses.
-The system automates CRUD (Create, Read, Update, Delete) processes for student information, utilizing services such as API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify, and CloudWatch.
-It adds real-time chat features using AWS AppSync, student diligence ranking with AWS Personalize, automated notifications via AWS SES, and exam event processing (such as updating test scores, exam schedules) through Amazon EventBridge to trigger automation.</p>
-<p><strong>Key Benefits:</strong></p>
-<ul>
-<li><strong>Students</strong>: Learn and practice real-world cloud application development, communicate directly with teachers, receive ranking notifications.</li>
-<li><strong>Small Businesses</strong>: Low-cost, easy-to-deploy data management solution with real-time communication and incentives.</li>
-<li><strong>Educational Institutions</strong>: Complete training lab environment for serverless development, ML, and real-time apps courses.</li>
-</ul>
-<hr>
-<h3 id="2-problem-analysis">2. Problem Analysis</h3>
-<p><strong>Current Situation:</strong><br>
-Small businesses and educational institutions face difficulties managing student data due to lack of infrastructure knowledge, lack of centralized management tools, and high costs of traditional systems such as self-managed servers or on-premise databases. Additionally, the lack of real-time communication features leads to delayed communication, absence of incentive mechanisms like diligence ranking, and manual exam event processing (such as updating scores, exam reminders).</p>
-<p><strong>Proposed Solution:</strong><br>
-The system provides a serverless management system on AWS with capabilities:</p>
-<ul>
-<li>Data management: DynamoDB + Lambda handles storage and querying of student information and scores.</li>
-<li>Secure authentication: Cognito manages login for lecturers and admins.</li>
-<li>Accessible frontend: S3 + Amplify hosts user-friendly dashboard interface.</li>
-<li>Monitoring: CloudWatch tracks logs and system performance.</li>
-<li>Real-time communication: AWS AppSync with GraphQL subscriptions to support real-time chat between students and teachers.</li>
-<li>Student diligence ranking: AWS Personalize analyzes activity data to re-rank students by diligence level.</li>
-<li>Automated notifications: AWS SES sends ranking notification emails and system updates.</li>
-<li>Exam event processing: Amazon EventBridge routes events from management web (such as creating new exams, updating scores) to trigger Lambda automation (e.g., sending notifications, updating rankings).</li>
-</ul>
-<p><strong>Expected Effectiveness:</strong></p>
-<ul>
-<li>Reduce infrastructure costs by 90% compared to traditional servers.</li>
-<li>Reduce deployment time by 70% with serverless technology.</li>
-<li>Increase communication efficiency by 60% with real-time chat.</li>
-<li>Increase engagement by 50% with personalized ratings and notifications.- Enhance cloud skills for students through practical hands-on experience.</li>
-</ul>
-<hr>
+<p>Serverless Student Management Platform is a cloud-based student management platform designed for educational institutions and small businesses to enhance the management, analysis, and interaction of student data. The platform supports up to 50-100 students initially, with the ability to flexibly scale up to 500-1000 students without major infrastructure changes, using AWS Serverless services such as Lambda, DynamoDB, AppSync, and EventBridge.</p>
+<p>Users can access it via a friendly web interface (supporting real-time chat for assignments and comments) combined with APIs for real-time data transmission, ensuring high interactivity. The platform leverages AWS to provide centralized management (secure data storage), predictive analytics (via Personalize for score rankings and recommendations), reminder notifications (via SES), and system monitoring (via CloudWatch), while optimizing costs by charging only for actual usage.</p>
+<h3 id="2-problem-statement">2. Problem Statement</h3>
+<p><strong>Current Issues</strong></p>
+<p>Current student management systems require manual data entry, making it difficult to manage multiple classes. There is no centralized system for data or real-time analytics, and third-party platforms are often expensive and overly complex. Lack of real-time communication features leads to delayed communication, absence of incentive mechanisms like diligence ranking, and manual exam event processing.</p>
+<p><strong>Solution</strong></p>
+<p>The platform uses Amazon API Gateway to handle REST requests, AWS Lambda for business logic processing, Amazon DynamoDB for storing student data and scores, and AWS AppSync with GraphQL for real-time communication. AWS Amplify with React/Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to traditional LMS systems but with lower costs, users can register new students and manage information, but this platform operates at a smaller scale and serves educational purposes. Key features include real-time management dashboard, learning trend analysis, and low operational costs.</p>
+<p><strong>Benefits and Return on Investment (ROI)</strong></p>
+<p>The solution creates a foundation for IT students to develop AWS serverless skills while providing efficient management tools for teachers in instruction and assessment. The platform reduces manual reporting for each class through centralized systems, simplifies management and maintenance, and improves data reliability. Monthly costs estimated at $7-20 USD (according to AWS Pricing Calculator), totaling $21-60 USD for 3 months. All AWS resources are used within free tier and low-cost options, with no additional development costs. ROI period of 3-6 months through significant savings in manual operations time and improved teaching efficiency.</p>
 <h3 id="3-solution-architecture">3. Solution Architecture</h3>
 <p>The system is designed following the AWS Well-Architected Framework with interconnected layers, ensuring data management capabilities, authentication, monitoring, real-time communication, ML ranking, notifications, and continuous event processing. The serverless architecture helps optimize costs and ensures automatic scalability.</p>
 <p><img src="../images/2-Proposal/solution.drawio.png" alt="Platform Architecture Diagram"></p>
@@ -367,9 +340,9 @@ The system provides a serverless management system on AWS with capabilities:</p>
   </thead>
   <tbody>
       <tr>
-          <td><strong>Amazon Route53</strong></td>
-          <td>Route events from management web to process exams (update scores, reminders)</td>
-          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
+          <td><strong>Amazon Route 53</strong></td>
+          <td>DNS management and routing traffic to CloudFront</td>
+          <td>Custom domain setup, health checks, geo-routing, SSL certificates integration</td>
       </tr>
       <tr>
           <td><strong>Amazon CloudFront</strong></td>
@@ -377,101 +350,192 @@ The system provides a serverless management system on AWS with capabilities:</p>
           <td>Reduce global latency, Edge caching, HTTPS, support HTTP/2 and HTTP/3, integrate WAF/Shield, custom domain (ACM), OAC protects S3</td>
       </tr>
       <tr>
-          <td><strong>Amazon WAF</strong></td>
-          <td>Route events from management web to process exams (update scores, reminders)</td>
-          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
+          <td><strong>AWS WAF</strong></td>
+          <td>Web Application Firewall protection against attacks</td>
+          <td>Block malicious requests, rate limiting, IP filtering, CloudFront integration</td>
       </tr>
       <tr>
           <td><strong>AWS Amplify</strong></td>
           <td>Deploy and host frontend dashboard with CI/CD</td>
           <td>Easy build/deploy web apps, seamless integration with Cognito and AppSync</td>
       </tr>
+      <tr>
+          <td><strong>AWS AppSync</strong></td>
+          <td>Support GraphQL API with subscriptions for realtime chat</td>
+          <td>Real-time data updates via WebSockets, easy integration with DynamoDB and Lambda</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon API Gateway</strong></td>
+          <td>Handle API requests and connect frontend-backend</td>
+          <td>Support RESTful APIs, throttling and caching to improve performance</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon Cognito</strong></td>
+          <td>Manage user authentication and authorization</td>
+          <td>Support MFA, JWT tokens, easy integration with frontend</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Lambda</strong></td>
+          <td>Execute CRUD logic without servers</td>
+          <td>Auto-scale, pay-per-use, reduce operational costs</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon DynamoDB</strong></td>
+          <td>Store NoSQL data for student information and chat messages</td>
+          <td>Fast queries, auto-scale, support GSI for complex searches</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudWatch</strong></td>
+          <td>Monitor system logs and metrics</td>
+          <td>Real-time monitoring, alarms to detect issues early</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon S3</strong></td>
+          <td>Store static files for frontend dashboard</td>
+          <td>Cheap static website hosting, high durability</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon EventBridge</strong></td>
+          <td>Route events from management web to process exams (update scores, reminders)</td>
+          <td>Event-driven architecture, integrate with Lambda to automate workflows</td>
+      </tr>
+      <tr>
+          <td><strong>AWS Personalize</strong></td>
+          <td>Build ML models to rank students based on activity data</td>
+          <td>Personalized ranking, auto-learn from data, support real-time inference</td>
+      </tr>
+      <tr>
+          <td><strong>AWS SES</strong></td>
+          <td>Send ranking notification emails and system updates</td>
+          <td>Easy integration with Lambda, support millions of emails/month, low cost</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeBuild</strong></td>
+          <td>Build and test code from GitLab repository</td>
+          <td>Auto compile, package artifacts, run unit tests in pipeline</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeDeploy</strong></td>
+          <td>Deploy applications to AWS services</td>
+          <td>Blue/green deployment, rollback capabilities, zero-downtime deployment</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodePipeline</strong></td>
+          <td>Orchestrate CI/CD pipeline from source to deploy</td>
+          <td>Automate the entire process, integrate with GitLab/CodeBuild/CodeDeploy, support approvals and notifications.</td>
+      </tr>
+      <tr>
+          <td><strong>GitLab</strong></td>
+          <td>Source control and trigger CI/CD pipeline</td>
+          <td>Version control, merge requests, issue tracking, webhook integration</td>
+      </tr>
   </tbody>
 </table>
-<p>| <strong>Amazon API Gateway</strong> | Handle API requests and connect frontend-backend | Support RESTful APIs, throttling and caching to improve performance |
-| <strong>AWS Lambda</strong> | Execute CRUD logic without servers | Auto-scale, pay-per-use, reduce operational costs |
-| <strong>Amazon DynamoDB</strong> | Store NoSQL data for student information and chat messages | Fast queries, auto-scale, support GSI for complex searches |
-| <strong>Amazon Cognito</strong> | Manage user authentication and authorization | Support MFA, JWT tokens, easy integration with frontend |
-| <strong>Amazon S3</strong> | Store static files for frontend dashboard | Cheap static website hosting, high durability |</p>
-<p>| <strong>Amazon CloudWatch</strong> | Monitor system logs and metrics | Real-time monitoring, alarms to detect issues early |
-| <strong>AWS AppSync</strong> | Support GraphQL API with subscriptions for realtime chat | Real-time data updates via WebSockets, easy integration with DynamoDB and Lambda |
-| <strong>AWS Personalize</strong> | Build ML models to rank students based on activity data | Personalized ranking, auto-learn from data, support real-time inference |
-| <strong>AWS SES</strong> | Send ranking notification emails and system updates | Easy integration with Lambda, support millions of emails/month, low cost |
-| <strong>AWS CodePipeline</strong> | Manage CI/CD pipeline to deploy code and infrastructure | Automate deployment, integrate with GitHub/Amplify, reduce manual errors |
-| <strong>Amazon EventBridge</strong> | Route events from management web to process exams (update scores, reminders) | Event-driven architecture, integrate with Lambda to automate workflows |</p>
-<h4 id="detailed-layer-design">Detailed Layer Design</h4>
-<p><strong>1. Frontend Layer (User Interface Layer)</strong></p>
-<pre tabindex="0"><code>Static Hosting &amp; Delivery
-├── Amazon S3 (Static file storage)
-├── Amazon CloudFront (CDN distribution)
-├── React/Vue Dashboard (CRUD UI with authentication, chat interface &amp; ranking display)
-</code></pre><p><strong>2. Authentication Layer (Authentication Layer)</strong></p>
-<pre tabindex="0"><code>User Management &amp; Security
-├── Amazon Cognito (User pools &amp; app clients)
-├── MFA &amp; JWT Tokens (Secure access for admins/lecturers/students)
-├── Integration with API Gateway/AppSync (Authorization)
-</code></pre><p><strong>3. API &amp; Logic Layer (Logic Processing Layer)</strong></p>
-<pre tabindex="0"><code>Serverless Backend
-├── Amazon API Gateway (RESTful endpoints: /students, /courses)
-├── AWS AppSync (GraphQL: queries, mutations, subscriptions for chat)
-├── AWS Lambda (CRUD, chat logic, ranking trigger, email send)
-├── Custom Code (Node.js/Python for validation, processing &amp; SES integration)
-</code></pre><p><strong>4. Data Storage Layer (Data Storage Layer)</strong></p>
-<pre tabindex="0"><code>NoSQL Database
-├── Amazon DynamoDB (Tables: Students, Courses, Messages, Interactions)
-├── Partition Keys &amp; GSIs (Efficient querying for chat &amp; ranking data)
-├── Backup &amp; TTL (Data protection &amp; cleanup for old messages)
-</code></pre><p><strong>5. ML &amp; Ranking Layer (Intelligent Ranking Layer)</strong></p>
-<pre tabindex="0"><code>Personalized Recommendation Pipeline
-├── AWS Personalize (Datasets: Users, Items=SinhVien, Interactions=HoatDong)
-├── Lambda Trigger (Import data from DynamoDB, train model)
-├── GetPersonalizedRanking API (Re-rank student list by &#34;diligence&#34;)
-</code></pre><p><strong>6. Notification Layer (Notification Layer)</strong></p>
-<pre tabindex="0"><code>Automated Alerts
-├── AWS SES (Send emails with templates)
-├── Lambda Function (Trigger from EventBridge on ranking updates)
-├── Integration with SNS (For fallback SMS if needed)
-</code></pre><p><strong>7. Monitoring Layer (Monitoring Layer)</strong></p>
-<pre tabindex="0"><code>Observability
-├── Amazon CloudWatch (Logs, metrics, alarms)
-├── X-Ray Integration (Tracing if extended)
-├── Dashboards (Real-time insights)
-</code></pre><hr>
+<h4 id="thiết-kế-thành-phần">Thiết kế thành phần</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Layer</strong></th>
+          <th><strong>Thành phần chính</strong></th>
+          <th><strong>Chức năng</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Edge Layer</strong></td>
+          <td>Route53, CloudFront, WAF</td>
+          <td>DNS, CDN, layer security</td>
+      </tr>
+      <tr>
+          <td><strong>Frontend Layer</strong></td>
+          <td>Amplify, AppSync, Cognito</td>
+          <td>Web interface, realtime chat, authentication</td>
+      </tr>
+      <tr>
+          <td><strong>Backend Layer</strong></td>
+          <td>API Gateway, Lambda, DynamoDB</td>
+          <td>Logic processing, CRUD, data storage</td>
+      </tr>
+      <tr>
+          <td><strong>Event &amp; ML Layer</strong></td>
+          <td>EventBridge, SES, Personalize</td>
+          <td>Send notifications, process ML ranking</td>
+      </tr>
+      <tr>
+          <td><strong>Monitoring Layer</strong></td>
+          <td>CloudWatch</td>
+          <td>Logs, metrics, alerts</td>
+      </tr>
+      <tr>
+          <td><strong>CI/CD Layer</strong></td>
+          <td>GitLab, CodePipeline, CodeBuild, CodeDeploy, S3</td>
+          <td>Build &amp; deploy automation</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="chú-thích-luồng-chính">Chú thích luồng chính</h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Luồng</strong></th>
+          <th><strong>Mô tả</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>(1)</strong></td>
+          <td>User access via Route53 → CloudFront → Amplify (frontend).</td>
+      </tr>
+      <tr>
+          <td><strong>(2)</strong></td>
+          <td>Amplify communicates with API Gateway or AppSync to send/receive data.</td>
+      </tr>
+      <tr>
+          <td><strong>(3.1)</strong></td>
+          <td>API Gateway → Lambda to handle logic (CRUD, events, etc.).</td>
+      </tr>
+      <tr>
+          <td><strong>(3.2)</strong></td>
+          <td>Cognito authenticates and returns tokens.</td>
+      </tr>
+      <tr>
+          <td><strong>(4)</strong></td>
+          <td>Lambda emits events via EventBridge.</td>
+      </tr>
+      <tr>
+          <td><strong>(4.1)</strong></td>
+          <td>EventBridge → SES sends reminder emails.</td>
+      </tr>
+      <tr>
+          <td><strong>(4.2)</strong></td>
+          <td>EventBridge → Lambda → Personalize for ML ranking.</td>
+      </tr>
+      <tr>
+          <td><strong>(5)</strong></td>
+          <td>Dev pushes code to GitLab → CodePipeline pull → CodeBuild/CodeDeploy → Amplify/Lambda.</td>
+      </tr>
+      <tr>
+          <td><strong>(6)</strong></td>
+          <td>CloudWatch collects logs and metrics.</td>
+      </tr>
+      <tr>
+          <td><strong>(7)</strong></td>
+          <td>AppSync sends realtime data (chat/notifications) to the frontend.</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="4-technical-implementation">4. Technical Implementation</h3>
 <h4 id="implementation-phases">Implementation Phases</h4>
-<p>The project follows a 10-week internship plan, divided into 6 main phases, focusing on AWS Serverless services, real-time, ML, and data integration.</p>
-<p><strong>1. Foundation &amp; Setup (Weeks 1–2)</strong><br>
-Create AWS account, configure IAM roles, and set up DynamoDB tables using CloudFormation.
-Set up baseline (Cognito user pools, S3 bucket).</p>
-<p><strong>2. Core Backend Deployment (Weeks 3–4)</strong><br>
-Deploy Lambda functions for CRUD, connect API Gateway and AppSync.
-Configure authorization with Cognito, add GraphQL schema for chat.</p>
-<p><strong>3. Frontend &amp; Integration (Weeks 5–6)</strong><br>
-Upload dashboard code to S3, configure CloudFront.
-Integrate frontend with API, AppSync subscriptions for real-time chat, and Cognito.</p>
-<p><strong>4. ML &amp; Ranking Integration (Week 7)</strong><br>
-Configure AWS Personalize with datasets from DynamoDB.
-Deploy Lambda to train model and get rankings.</p>
-<p><strong>5. Notification &amp; Monitoring (Week 8)</strong><br>
-Integrate AWS SES with Lambda for email notifications.
-Set up CloudWatch logs and alarms.</p>
-<p><strong>6. Testing &amp; Optimization (Weeks 9–10)</strong><br>
-End-to-end testing with sample data, including chat, ranking, and email.
-Optimize cost and performance, complete documentation and demo.</p>
+<p>The project consists of 2 parts — developing a serverless student management system and building an intelligent analytics platform — each going through 4 phases:</p>
+<ol>
+<li><strong>Research and Architecture Design</strong>: Research AWS serverless patterns with DynamoDB and design architecture integrating realtime chat/ranking (1 month before internship).</li>
+<li><strong>Cost Calculation and Feasibility Check</strong>: Use AWS Pricing Calculator for estimation and adjust scope accordingly (Month 1).</li>
+<li><strong>Architecture Adjustment for Cost/Solution Optimization</strong>: Fine-tune (e.g., optimize Lambda with React SSR) to ensure efficiency (Month 2).</li>
+<li><strong>Development, Testing, Deployment</strong>: Program React frontend, AWS services with CDK/SDK and AppSync subscriptions, then test and deploy to production (Month 2–3).</li>
+</ol>
 <h4 id="technical-requirements">Technical Requirements</h4>
-<ul>
-<li>Architecture: 100% AWS Serverless (Lambda, API Gateway, AppSync, DynamoDB, Personalize, SES).</li>
-<li>Infrastructure: CloudFormation templates; S3 used for frontend storage.</li>
-<li>Monitoring: CloudWatch for logs and metrics.</li>
-<li>Frontend &amp; Dashboard: React 18 + AWS Amplify Hosting, with Amplify JS for AppSync subscriptions.</li>
-<li>Backend: AWS Lambda (Python/Node.js) with API Gateway and AppSync.</li>
-<li>Database: DynamoDB for main data, chat messages, and interactions.</li>
-<li>Realtime Chat: Use AppSync subscriptions to push new messages to client in real-time.</li>
-<li>Ranking: Personalize recipe Personalized-Ranking for re-ranking based on interactions.</li>
-<li>Notification: SES templates for personalized emails, triggered from Lambda/EventBridge.</li>
-<li>Performance targets: Query time &lt;1 second, chat latency &lt;2 seconds, weekly ranking updates, uptime ≥99%, total cost &lt;$15.</li>
-</ul>
-<hr>
+<p><strong>Student Management System</strong>: Web dashboard (CRUD students, scores, courses), real-time chat, ML ranking. Frontend React/Next.js running on Amplify Hosting, using AppSync subscriptions to receive real-time chat messages and ranking updates. Cognito authenticates and authorizes all users, including 5-10 admins/teachers (with high privileges like CRUD data) and students (with limited privileges like viewing personal scores, joining chat).</p>
+<p><strong>Intelligent Analytics Platform</strong>: Practical knowledge of AWS Amplify (hosting React), Lambda (minimized due to SSR handling), AWS Personalize (ML ranking), DynamoDB (main NoSQL), AppSync (GraphQL + subscriptions), and EventBridge (event routing). Use AWS CDK/SDK for programming (e.g., EventBridge rules to Lambda for notifications). React SSR helps reduce Lambda load for fullstack web applications.</p>
 <h3 id="5-roadmap--key-milestones">5. Roadmap &amp; Key Milestones</h3>
 <p>The project is implemented over 14 weeks (from September to December 2025), divided into 6 main phases following the Agile model.</p>
 <table>
@@ -529,7 +593,6 @@ Optimize cost and performance, complete documentation and demo.</p>
       </tr>
   </tbody>
 </table>
-<hr>
 <h3 id="6-budget-estimate">6. Budget Estimate</h3>
 <p>You can view the cost on <a href="https://calculator.aws/#/estimate?id=security-monitoring-2025">AWS Pricing Calculator</a> or download the <a href="./budget-estimate.xlsx">budget estimate file</a>.</p>
 <h4 id="infrastructure-costs">Infrastructure Costs</h4>
@@ -564,7 +627,7 @@ Optimize cost and performance, complete documentation and demo.</p>
       </tr>
       <tr>
           <td><strong>Amazon Cognito</strong></td>
-          <td>~10k MAUs</td>
+          <td>~10k monthly active users</td>
           <td>~$0.0055 – $0.015</td>
           <td>Essentials: $0.015/MAU; free tier 10k MAUs.</td>
       </tr>
@@ -611,10 +674,40 @@ Optimize cost and performance, complete documentation and demo.</p>
           <td>Build minutes: $0.01/minute; Hosting: $0.15/GB served; free tier available.</td>
       </tr>
       <tr>
-          <td><strong>CodePipeline</strong></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><strong>Amazon Route 53</strong></td>
+          <td>DNS queries, hosted zones</td>
+          <td>~$0.50 – $1.00</td>
+          <td>Hosted zone: $0.50/zone/month; DNS queries: $0.40/million queries.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS WAF</strong></td>
+          <td>Web ACL evaluation, rules</td>
+          <td>~$1.00 – $3.00</td>
+          <td>Web ACL: $1.00/month; Rules: $0.60/million requests; managed rules additional.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeBuild</strong></td>
+          <td>~10 builds/month, 100 minutes</td>
+          <td>~$0.00 – $0.50</td>
+          <td>$0.005/build minute; free tier 100 minutes/month.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodeDeploy</strong></td>
+          <td>Application deployments</td>
+          <td>~$0.00 – $0.20</td>
+          <td>EC2/on-premise: $0.02/deployment; serverless free.</td>
+      </tr>
+      <tr>
+          <td><strong>Amazon CloudFront</strong></td>
+          <td>CDN delivers static content (Route53 &amp; Amplify/S3 connection)</td>
+          <td>~$0.10 – $1.00</td>
+          <td>First 1 TB/month free in Free Tier; $0.085/GB thereafter.</td>
+      </tr>
+      <tr>
+          <td><strong>AWS CodePipeline</strong></td>
+          <td>CI/CD automation (GitLab connection → CodeBuild → CodeDeploy)</td>
+          <td>~$1.00</td>
+          <td>$1.00/month for each active pipeline.</td>
       </tr>
   </tbody>
 </table>
@@ -629,9 +722,9 @@ Optimize cost and performance, complete documentation and demo.</p>
   </thead>
   <tbody>
       <tr>
-          <td><strong>~$5 – $15 / month</strong></td>
-          <td><strong>~$15 – $45 / 3 months</strong></td>
-          <td>Depends on actual usage (chat, ranking, emails, events); leverage free tier.</td>
+          <td><strong>~$7 – $20 / month</strong></td>
+          <td><strong>~$21 – $60 / 3 months</strong></td>
+          <td>Depends on actual usage (chat, ranking, emails, events); leverage free tier. Additional Route53, WAF, CI/CD costs.</td>
       </tr>
   </tbody>
 </table>
@@ -642,7 +735,6 @@ Optimize cost and performance, complete documentation and demo.</p>
 <li>Personalize &amp; SES costs based on volume; optimize with batch processing.</li>
 <li>EventBridge costs based on number of events; optimize with filter rules.</li>
 </ul>
-<hr>
 <h3 id="7-risk-assessment">7. Risk Assessment</h3>
 <p>Based on NIST Risk Management Framework, the project team identifies key risks and mitigation measures.</p>
 <table>
@@ -711,14 +803,13 @@ Optimize cost and performance, complete documentation and demo.</p>
 <li>Communication: CloudWatch alarms send emails.</li>
 <li>Continuous Improvement: Weekly review, including chat performance, ranking, and event handling.</li>
 </ul>
-<hr>
 <h3 id="8-expected-results">8. Expected Results</h3>
 <p><strong>Technical Results:</strong></p>
 <ul>
 <li>Complete serverless student management system with full CRUD, real-time chat, ML ranking, email notifications, and exam event processing.</li>
 <li>Integration of API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify, CloudWatch, AppSync, Personalize, SES, EventBridge.</li>
 <li>Response time &lt;1 second, chat latency &lt;2 seconds, event processing &lt;5 seconds, uptime ≥99%.</li>
-<li>Actual cost ≤ $15/3 months.</li>
+<li>Actual cost ≤ $20/3 months.</li>
 </ul>
 <p><strong>Learning and Training Results:</strong></p>
 <ul>
@@ -738,134 +829,7 @@ Optimize cost and performance, complete documentation and demo.</p>
 <li>Platform for serverless, real-time, and event-driven training labs.</li>
 </ul>
 <hr>
-<h3 id="9-references-and-appendix">9. References and Appendix</h3>
-<p><strong>Main Technical Documentation:</strong></p>
-<ul>
-<li><a href="https://docs.aws.amazon.com/serverless-application-model/">AWS Serverless Application Model (SAM)</a></li>
-<li><a href="https://docs.aws.amazon.com/wellarchitected/">AWS Well-Architected Framework</a></li>
-<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html">DynamoDB Best Practices</a></li>
-<li><a href="https://aws.amazon.com/appsync/">AWS AppSync for Realtime Apps</a></li>
-<li><a href="https://docs.aws.amazon.com/personalize/">AWS Personalize Developer Guide</a></li>
-<li><a href="https://docs.aws.amazon.com/ses/">AWS SES Developer Guide</a></li>
-<li><a href="https://aws.amazon.com/amplify/">AWS Amplify Hosting</a></li>
-<li><a href="https://docs.aws.amazon.com/eventbridge/">Amazon EventBridge User Guide</a></li>
-</ul>
-<p><strong>AWS Pricing Calculator Links:</strong></p>
-<ul>
-<li><a href="https://calculator.aws/#/estimate?id=dev-sms-2025">Development Estimate</a></li>
-</ul>
-<p><strong>CloudFormation Templates:</strong></p>
-<ul>
-<li>GitHub Repository: serverless-student-management</li>
-</ul>
-<p><strong>Training Materials:</strong></p>
-<ul>
-<li>Workshop Guide: &ldquo;Building Serverless SMS with Realtime, ML &amp; Notifications&rdquo;</li>
-<li>Hands-on Labs: 15+ scenarios incl. chat, ranking</li>
-</ul>
-<p><strong>Contact Information:</strong></p>
-<ul>
-<li>Project Team: [Team Name]</li>
-<li>Technical Lead: [Your Name]</li>
-<li>Institution: [School]</li>
-<li>Email: [Email]</li>
-<li>Project Repository: [GitHub URL]</li>
-</ul>
-<p><strong>Success Metrics:</strong></p>
-<ul>
-<li>System Uptime: 99%</li>
-<li>Response Time: &lt;1s</li>
-<li>Chat Latency: &lt;2s</li>
-<li>Cost Control: &lt;$15</li>
-<li>Learning: 10+ services mastered</li>
-</ul>
-<pre tabindex="0"><code>
----
 
-### 7. Đánh giá rủi ro
-
-Dựa trên NIST Risk Management Framework, nhóm dự án xác định các rủi ro chính và biện pháp giảm thiểu.
-
-| **Mã rủi ro** | **Mô tả** | **Mức độ** | **Giảm thiểu (Mitigation)** |
-|----------------|------------|-------------|------------------------------|
-| **R1 – Data Leakage** | Lộ dữ liệu do config sai | **Cao** | Áp dụng Cognito auth, IAM least privilege, DynamoDB encryption |
-| **R2 – API Overload** | Quá nhiều requests gây chậm | **Trung bình** | Throttling API Gateway/AppSync, alarms CloudWatch |
-| **R3 – Lambda Cold Start** | Delay khi invoke | **Trung bình** | Tối ưu code, Provisioned Concurrency nếu cần |
-| **R4 – Chi phí vượt** | Usage tăng bất thường (chat, emails cao) | **Trung bình** | AWS Budgets alerts, monitor Cost Explorer |
-| **R5 – Service Downtime** | Gián đoạn AWS | **Thấp** | Multi-AZ config, backups DynamoDB |
-| **R6 – Realtime Latency** | Delay trong chat do subscriptions | **Trung bình** | Sử dụng AppSync caching, test với load cao |
-| **R7 – ML Accuracy** | Xếp hạng không chính xác do data kém | **Trung bình** | Validate datasets, retrain định kỳ với Lambda |
-| **R8 – Event Processing Failure** | Lỗi routing sự kiện kiểm tra | **Trung bình** | Dead-letter queues cho EventBridge, test rules |
-
-**Contingency Plan (Tóm tắt):**
-- Recovery: Sử dụng CloudFormation rebuild nhanh.
-- Communication: CloudWatch alarms gửi email.
-- Continuous Improvement: Review hàng tuần, bao gồm performance chat, ranking và event handling.
-
-
----
-
-### 8. Kết quả kỳ vọng
-
-**Kết quả kỹ thuật:**
-- Hoàn thiện hệ thống serverless quản lý sinh viên với CRUD đầy đủ, chat realtime, ranking ML, thông báo email và xử lý sự kiện kiểm tra.
-- Tích hợp API Gateway, Lambda, DynamoDB, Cognito, S3, Amplify, CloudWatch, AppSync, Personalize, SES, EventBridge.
-- Thời gian response &lt;1 giây, latency chat &lt;2 giây, event processing &lt;5 giây, uptime ≥99%.
-- Chi phí thực tế ≤ $15/3 tháng.
-
-**Kết quả học tập và đào tạo:**
-- Người học nắm vững phát triển serverless, realtime apps và event-driven architecture.
-- Chuẩn bị cho chứng chỉ AWS Developer Associate.
-- Phát triển kỹ năng IaC, NoSQL, Authentication, GraphQL, Personalization, Events.
-
-**Kết quả chuyên môn &amp; trình bày:**
-- Báo cáo kèm dashboard, chat, ranking, email và event demo.
-- Demo CRUD, chat thời gian thực, thông báo và xử lý sự kiện kiểm tra.
-- Tài liệu hướng dẫn triển khai.
-
-**Giá trị dài hạn:**
-- Dễ mở rộng sang mobile app hoặc AI analytics nâng cao.
-- Nền tảng cho lab đào tạo serverless, realtime và event-driven.
-
-
----
-
-### 9. Tài liệu tham khảo và Phụ lục
-
-**Tài liệu kỹ thuật chính:**
-- [AWS Serverless Application Model (SAM)](https://docs.aws.amazon.com/serverless-application-model/)
-- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/)
-- [DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
-- [AWS AppSync for Realtime Apps](https://aws.amazon.com/appsync/)
-- [AWS Personalize Developer Guide](https://docs.aws.amazon.com/personalize/)
-- [AWS SES Developer Guide](https://docs.aws.amazon.com/ses/)
-- [AWS Amplify Hosting](https://aws.amazon.com/amplify/)
-- [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/)
-
-**AWS Pricing Calculator Links:**
-- [Development Estimate](https://calculator.aws/#/estimate?id=dev-sms-2025)
-
-**CloudFormation Templates:**
-- GitHub Repository: serverless-student-management
-
-**Training Materials:**
-- Workshop Guide: &#34;Building Serverless SMS with Realtime, ML &amp; Notifications&#34;
-- Hands-on Labs: 15+ scenarios incl. chat, ranking
-
-**Contact Information:**
-- Project Team: [Tên nhóm]
-- Technical Lead: [Tên bạn]
-- Institution: [Trường]
-- Email: [Email]
-- Project Repository: [GitHub URL]
-
-**Success Metrics:**
-- System Uptime: 99%
-- Response Time: &lt;1s
-- Chat Latency: &lt;2s
-- Cost Control: &lt;$15
-- Learning: 10+ services mastered 
-</code></pre>
 
 
 
@@ -937,19 +901,19 @@ Dựa trên NIST Risk Management Framework, nhóm dự án xác định các r�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1762747133"></script>
-    <script src="../js/perfect-scrollbar.min.js?1762747133"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1762747133"></script>
-    <script src="../js/jquery.sticky.js?1762747133"></script>
-    <script src="../js/featherlight.min.js?1762747133"></script>
-    <script src="../js/highlight.pack.js?1762747133"></script>
+    <script src="../js/clipboard.min.js?1762757814"></script>
+    <script src="../js/perfect-scrollbar.min.js?1762757814"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1762757814"></script>
+    <script src="../js/jquery.sticky.js?1762757814"></script>
+    <script src="../js/featherlight.min.js?1762757814"></script>
+    <script src="../js/highlight.pack.js?1762757814"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1762747133"></script>
-    <script src="../js/learn.js?1762747133"></script>
-    <script src="../js/hugo-learn.js?1762747133"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1762757814"></script>
+    <script src="../js/learn.js?1762757814"></script>
+    <script src="../js/hugo-learn.js?1762757814"></script>
 
-    <link href="../mermaid/mermaid.css?1762747133" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1762747133"></script>
+    <link href="../mermaid/mermaid.css?1762757814" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1762757814"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,7 +12,7 @@ chapter: false
 
 &emsp; **Nguyễn Hoàng Nam** ---Team-leader/Back-end --- namnhse182076@fpt.edu.vn --- 0825561297 
 
-&emsp; **Pham Bao Phi** --- Front-End, Back-End --- phipbse185046@fpt.edu.vn --- 0399212721
+&emsp; **Phạm Bảo Phi** --- Front-End, Back-End --- phipbse185046@fpt.edu.vn --- 0399212721
 
 &emsp; **Nguyễn Nhật Kim Ngân** --- Front-End, Business Analysis --- ngannnkse182088@fpt.edu.vn --- 0333 982 942
 
